@@ -1,0 +1,339 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bird Identifier</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 min-h-screen">
+  <div class="max-w-6xl mx-auto py-6 px-4">
+    <h1 class="text-2xl font-bold mb-4">Bird Identifier – Classification Filter</h1>
+
+    <!-- Filters -->
+    <div class="bg-white rounded-lg shadow p-4 mb-4">
+      <div class="mb-3">
+        <h2 class="font-semibold mb-2">Couleurs</h2>
+        <div id="colors-container" class="flex flex-wrap gap-3">
+          <!-- checkboxes inserted by JS -->
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-4">
+        <div class="flex items-center gap-2">
+          <label for="motif-select" class="font-semibold">Motif :</label>
+          <select id="motif-select"
+                  class="border rounded px-2 py-1 text-sm bg-white">
+            <option value="">(Tous)</option>
+          </select>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <label for="taille-select" class="font-semibold">Taille :</label>
+          <select id="taille-select"
+                  class="border rounded px-2 py-1 text-sm bg-white">
+            <option value="">(Toutes)</option>
+          </select>
+        </div>
+
+        <button id="reset-btn"
+                class="ml-auto inline-flex items-center gap-1 border border-slate-300 rounded px-3 py-1 text-sm hover:bg-slate-100">
+          Reset
+        </button>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div id="table-wrapper" class="bg-white rounded-lg shadow p-3">
+      <div class="overflow-auto">
+        <table id="results-table" class="min-w-full table-auto border-collapse">
+          <!-- populated by JS -->
+        </table>
+      </div>
+      <p id="status" class="mt-2 text-sm text-gray-600"></p>
+    </div>
+  </div>
+
+  <script>
+    // ----------------- CONFIG -----------------
+    const DATA_URL = 'base-data.json';
+
+    const COLOR_HEADERS = ['Noir', 'Blanc', 'Marron', 'Gris', 'Bleu', 'Jaune', 'Vert', 'Violet'];
+    const COLOR_START_COL_INDEX = 5;  // F column (0-based)
+    const MOTIF_COL_INDEX = 13;       // N column (0-based)
+    const TAILLE_COL_INDEX = 4;       // E column (0-based)
+
+    // ----------------- STATE ------------------
+    let values = [];
+    let headerRows = [];
+    let dataRows = [];
+    let displayedRows = [];
+    let sortState = { colIndex: null, direction: 1 }; // 1 = A→Z, -1 = Z→A
+
+    // ----------------- HELPERS ----------------
+    function norm(s) {
+      if (s === null || s === undefined) return '';
+      return s.toString()
+        .trim()
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '');
+    }
+
+    function getColorFilters() {
+      // order: COLOR_HEADERS
+      return COLOR_HEADERS.map((_, idx) => {
+        const cb = document.querySelector(\`input[data-color-index="\${idx}"]\`);
+        return cb ? cb.checked : false;
+      });
+    }
+
+    // ----------------- DATA LOAD --------------
+    async function loadData() {
+      const res = await fetch(DATA_URL);
+      if (!res.ok) {
+        throw new Error('Failed to load ' + DATA_URL);
+      }
+      const json = await res.json();
+      values = json.values || [];
+      if (values.length < 3) {
+        throw new Error('Not enough rows in data (need headers + data).');
+      }
+      headerRows = values.slice(0, 2);
+      dataRows = values.slice(2);
+
+      buildColorCheckboxes();
+      buildMotifAndTailleOptions();
+      applyFilter();
+    }
+
+    // ----------------- UI BUILD ---------------
+    function buildColorCheckboxes() {
+      const container = document.getElementById('colors-container');
+      container.innerHTML = '';
+      COLOR_HEADERS.forEach((label, idx) => {
+        const wrapper = document.createElement('label');
+        wrapper.className = 'inline-flex items-center gap-1 text-sm';
+
+        const input = document.createElement('input');
+        input.type = 'checkbox';
+        input.dataset.colorIndex = idx;
+        input.className = 'rounded border-slate-300';
+        input.addEventListener('change', applyFilter);
+
+        const span = document.createElement('span');
+        span.textContent = label;
+
+        wrapper.appendChild(input);
+        wrapper.appendChild(span);
+        container.appendChild(wrapper);
+      });
+    }
+
+    function buildMotifAndTailleOptions() {
+      const motifSelect = document.getElementById('motif-select');
+      const tailleSelect = document.getElementById('taille-select');
+
+      const motifsSet = new Set();
+      const taillesSet = new Set();
+
+      dataRows.forEach(row => {
+        const motifVal = row[MOTIF_COL_INDEX];
+        const tailleVal = row[TAILLE_COL_INDEX];
+
+        if (motifVal) motifsSet.add(motifVal);
+        if (tailleVal) taillesSet.add(tailleVal);
+      });
+
+      const motifs = Array.from(motifsSet).sort((a, b) => norm(a).localeCompare(norm(b)));
+      const tailles = Array.from(taillesSet).sort((a, b) => norm(a).localeCompare(norm(b)));
+
+      motifSelect.innerHTML = '<option value="">(Tous)</option>' +
+        motifs.map(m => \`<option value="\${m}">\${m}</option>\`).join('');
+
+      tailleSelect.innerHTML = '<option value="">(Toutes)</option>' +
+        tailles.map(t => \`<option value="\${t}">\${t}</option>\`).join('');
+
+      motifSelect.addEventListener('change', applyFilter);
+      tailleSelect.addEventListener('change', applyFilter);
+    }
+
+    // ----------------- FILTER LOGIC -----------
+    function filterRows() {
+      const colors = getColorFilters();
+      const motifFilter = document.getElementById('motif-select').value;
+      const tailleFilter = document.getElementById('taille-select').value;
+
+      const motifFilterNorm = motifFilter ? norm(motifFilter) : '';
+      const tailleFilterNorm = tailleFilter ? norm(tailleFilter) : '';
+
+      const results = [];
+
+      dataRows.forEach(row => {
+        let show = true;
+
+        // Colors strict
+        for (let i = 0; i < COLOR_HEADERS.length; i++) {
+          const colIndex = COLOR_START_COL_INDEX + i;
+          const checked = !!colors[i];
+          const hasX = row[colIndex] === 'X';
+
+          if (checked && !hasX) {
+            show = false;
+            break;
+          }
+          if (!checked && hasX) {
+            show = false;
+            break;
+          }
+        }
+
+        if (!show) return;
+
+        // Motif
+        if (motifFilterNorm) {
+          const motifNorm = norm(row[MOTIF_COL_INDEX]);
+          if (motifNorm !== motifFilterNorm) {
+            show = false;
+          }
+        }
+
+        if (!show) return;
+
+        // Taille
+        if (tailleFilterNorm) {
+          const tailleNorm = norm(row[TAILLE_COL_INDEX]);
+          if (tailleNorm !== tailleFilterNorm) {
+            show = false;
+          }
+        }
+
+        if (show) results.push(row);
+      });
+
+      return results;
+    }
+
+    function applyFilter() {
+      displayedRows = filterRows();
+      sortState = { colIndex: null, direction: 1 }; // reset sort on new filter
+      renderTable();
+    }
+
+    // ----------------- TABLE RENDER -----------
+
+    function renderTable() {
+      const table = document.getElementById('results-table');
+      const status = document.getElementById('status');
+
+      table.innerHTML = '';
+
+      if (!displayedRows.length) {
+        status.textContent = 'Aucun résultat';
+        return;
+      }
+
+      status.textContent = displayedRows.length + ' résultat(s)';
+
+      const thead = document.createElement('thead');
+      const headerRow2 = headerRows[1] || [];
+      const headerTr = document.createElement('tr');
+
+      for (let colIndex = 0; colIndex < headerRow2.length; colIndex++) {
+        const th = document.createElement('th');
+        const label = headerRow2[colIndex] != null ? headerRow2[colIndex] : ('Col ' + (colIndex + 1));
+        th.textContent = label;
+        th.className = 'border border-slate-200 px-2 py-1 text-xs font-semibold text-center cursor-pointer select-none bg-slate-50 hover:bg-slate-100';
+        th.addEventListener('click', () => onHeaderClick(colIndex));
+        headerTr.appendChild(th);
+      }
+      thead.appendChild(headerTr);
+      table.appendChild(thead);
+
+      const tbody = document.createElement('tbody');
+
+      displayedRows.forEach(row => {
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-50';
+        row.forEach(cell => {
+          const td = document.createElement('td');
+          td.textContent = cell == null ? '' : cell;
+          td.className = 'border border-slate-200 px-2 py-1 text-xs text-center whitespace-nowrap';
+          tbody.appendChild(tr);
+          tr.appendChild(td);
+        });
+      });
+
+      table.appendChild(tbody);
+    }
+
+    // ----------------- SORTING ----------------
+
+    function onHeaderClick(colIndex) {
+      if (!displayedRows.length) return;
+
+      if (sortState.colIndex === colIndex) {
+        sortState.direction *=  -1; // toggle
+      } else {
+        sortState.colIndex = colIndex;
+        sortState.direction = 1;
+      }
+
+      displayedRows.sort((a, b) => {
+        const aVal = a[colIndex];
+        const bVal = b[colIndex];
+
+        const aNorm = norm(aVal);
+        const bNorm = norm(bVal);
+
+        // Try numeric compare
+        const aNum = parseFloat(aNorm.replace(',', '.'));
+        const bNum = parseFloat(bNorm.replace(',', '.'));
+        const aIsNum = !isNaN(aNum);
+        const bIsNum = !isNaN(bNum);
+
+        let cmp;
+        if (aIsNum && bIsNum) {
+          cmp = aNum - bNum;
+        } else {
+          cmp = aNorm.localeCompare(bNorm);
+        }
+
+        return cmp * sortState.direction;
+      });
+
+      renderTable();
+    }
+
+    // ----------------- RESET ------------------
+
+    function setupResetButton() {
+      const resetBtn = document.getElementById('reset-btn');
+      resetBtn.addEventListener('click', () => {
+        document
+          .querySelectorAll('#colors-container input[type="checkbox"]')
+          .forEach(cb => cb.checked = false);
+
+        document.getElementById('motif-select').value = '';
+        document.getElementById('taille-select').value = '';
+
+        applyFilter();
+      });
+    }
+
+    // ----------------- INIT -------------------
+
+    window.addEventListener('DOMContentLoaded', async () => {
+      try {
+        setupResetButton();
+        await loadData();
+      } catch (err) {
+        console.error(err);
+        document.getElementById('status').textContent =
+          'Erreur lors du chargement des données : ' + err.message;
+      }
+    });
+  </script>
+</body>
+</html>
