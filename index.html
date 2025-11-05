@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Bird Identifier</title>
+  <title>Atlas de Plumes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Tailwind via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-100 min-h-screen">
   <div class="max-w-6xl mx-auto py-6 px-4">
-    <h1 class="text-2xl font-bold mb-4">Bird Identifier – Classification Filter</h1>
+    <h1 class="text-2xl font-bold mb-1">Outil de diagnose des plumes d'oiseaux de France Metropolitaine</h1>
+    <h2 class="text-xl font-bold mb-4">Aude Villeneuve - Thèse d'exercice vétérinaire - 2026</h2>
 
     <!-- Filters -->
     <div class="bg-white rounded-lg shadow p-4 mb-4">
@@ -57,8 +58,6 @@
 
   <script>
     // ----------------- CONFIG -----------------
-    // IMPORTANT: leave this as a relative path.
-    // index.html and base-data.json are in the same folder.
     const DATA_URL = './base-data.json';
 
     const COLOR_HEADERS = ['Noir', 'Blanc', 'Marron', 'Gris', 'Bleu', 'Jaune', 'Vert', 'Violet'];
@@ -72,6 +71,7 @@
     let dataRows = [];
     let displayedRows = [];
     let sortState = { colIndex: null, direction: 1 }; // 1 = A→Z, -1 = Z→A
+    let apercuColIndex = null; // index of "Apercu" column
 
     // ----------------- HELPERS ----------------
     function norm(s) {
@@ -84,7 +84,6 @@
     }
 
     function getColorFilters() {
-      // order: COLOR_HEADERS
       return COLOR_HEADERS.map((_, idx) => {
         const cb = document.querySelector(`input[data-color-index="${idx}"]`);
         return cb ? cb.checked : false;
@@ -96,6 +95,17 @@
       status.textContent = msg;
       status.className =
         'mt-2 text-sm ' + (isError ? 'text-red-600' : 'text-gray-600');
+    }
+
+    // Find the "Apercu" column index from the second header row
+    function detectApercuColumn() {
+      const headerRow2 = headerRows[1] || [];
+      for (let i = 0; i < headerRow2.length; i++) {
+        if (norm(headerRow2[i]) === 'apercu') {
+          return i;
+        }
+      }
+      return null;
     }
 
     // ----------------- DATA LOAD --------------
@@ -116,6 +126,9 @@
       }
       headerRows = values.slice(0, 2);
       dataRows = values.slice(2);
+
+      apercuColIndex = detectApercuColumn();
+      console.log('Apercu column index:', apercuColIndex);
 
       buildColorCheckboxes();
       buildMotifAndTailleOptions();
@@ -275,13 +288,35 @@
       displayedRows.forEach(row => {
         const tr = document.createElement('tr');
         tr.className = 'hover:bg-slate-50';
-        row.forEach(cell => {
+
+        row.forEach((cell, colIndex) => {
           const td = document.createElement('td');
-          td.textContent = cell == null ? '' : cell;
           td.className =
             'border border-slate-200 px-2 py-1 text-xs text-center whitespace-nowrap';
+
+          // Special rendering for Apercu column: show a button that opens the link
+          if (apercuColIndex !== null && colIndex === apercuColIndex) {
+            const url = cell == null ? '' : cell.toString().trim();
+            if (url) {
+              const btn = document.createElement('button');
+              btn.textContent = 'Aperçu';
+              btn.className =
+                'px-2 py-1 text-xs rounded bg-blue-600 text-white hover:bg-blue-700';
+              btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                window.open(url, '_blank', 'noopener');
+              });
+              td.appendChild(btn);
+            } else {
+              td.textContent = '';
+            }
+          } else {
+            td.textContent = cell == null ? '' : cell;
+          }
+
           tr.appendChild(td);
         });
+
         tbody.appendChild(tr);
       });
 
