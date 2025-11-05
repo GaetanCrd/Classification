@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -57,7 +57,9 @@
 
   <script>
     // ----------------- CONFIG -----------------
-    const DATA_URL = 'https://gaetancrd.github.io/Classification/';
+    // IMPORTANT: leave this as a relative path.
+    // index.html and base-data.json are in the same folder.
+    const DATA_URL = './base-data.json';
 
     const COLOR_HEADERS = ['Noir', 'Blanc', 'Marron', 'Gris', 'Bleu', 'Jaune', 'Vert', 'Violet'];
     const COLOR_START_COL_INDEX = 5;  // F column (0-based)
@@ -84,18 +86,30 @@
     function getColorFilters() {
       // order: COLOR_HEADERS
       return COLOR_HEADERS.map((_, idx) => {
-        const cb = document.querySelector(\`input[data-color-index="\${idx}"]\`);
+        const cb = document.querySelector(`input[data-color-index="${idx}"]`);
         return cb ? cb.checked : false;
       });
     }
 
+    function setStatus(msg, isError = false) {
+      const status = document.getElementById('status');
+      status.textContent = msg;
+      status.className =
+        'mt-2 text-sm ' + (isError ? 'text-red-600' : 'text-gray-600');
+    }
+
     // ----------------- DATA LOAD --------------
     async function loadData() {
+      console.log('Fetching data from', DATA_URL);
       const res = await fetch(DATA_URL);
+
       if (!res.ok) {
-        throw new Error('Failed to load ' + DATA_URL);
+        throw new Error(`Failed to load ${DATA_URL} (HTTP ${res.status})`);
       }
+
       const json = await res.json();
+      console.log('JSON loaded, example row:', json.values?.[2]);
+
       values = json.values || [];
       if (values.length < 3) {
         throw new Error('Not enough rows in data (need headers + data).');
@@ -150,10 +164,10 @@
       const tailles = Array.from(taillesSet).sort((a, b) => norm(a).localeCompare(norm(b)));
 
       motifSelect.innerHTML = '<option value="">(Tous)</option>' +
-        motifs.map(m => \`<option value="\${m}">\${m}</option>\`).join('');
+        motifs.map(m => `<option value="${m}">${m}</option>`).join('');
 
       tailleSelect.innerHTML = '<option value="">(Toutes)</option>' +
-        tailles.map(t => \`<option value="\${t}">\${t}</option>\`).join('');
+        tailles.map(t => `<option value="${t}">${t}</option>`).join('');
 
       motifSelect.addEventListener('change', applyFilter);
       tailleSelect.addEventListener('change', applyFilter);
@@ -216,25 +230,28 @@
     }
 
     function applyFilter() {
-      displayedRows = filterRows();
-      sortState = { colIndex: null, direction: 1 }; // reset sort on new filter
-      renderTable();
+      try {
+        displayedRows = filterRows();
+        sortState = { colIndex: null, direction: 1 }; // reset sort on new filter
+        renderTable();
+      } catch (err) {
+        console.error(err);
+        setStatus('Erreur lors de l\'application des filtres : ' + err.message, true);
+      }
     }
 
     // ----------------- TABLE RENDER -----------
-
     function renderTable() {
       const table = document.getElementById('results-table');
-      const status = document.getElementById('status');
 
       table.innerHTML = '';
 
       if (!displayedRows.length) {
-        status.textContent = 'Aucun résultat';
+        setStatus('Aucun résultat');
         return;
       }
 
-      status.textContent = displayedRows.length + ' résultat(s)';
+      setStatus(displayedRows.length + ' résultat(s)');
 
       const thead = document.createElement('thead');
       const headerRow2 = headerRows[1] || [];
@@ -242,9 +259,11 @@
 
       for (let colIndex = 0; colIndex < headerRow2.length; colIndex++) {
         const th = document.createElement('th');
-        const label = headerRow2[colIndex] != null ? headerRow2[colIndex] : ('Col ' + (colIndex + 1));
+        const label =
+          headerRow2[colIndex] != null ? headerRow2[colIndex] : ('Col ' + (colIndex + 1));
         th.textContent = label;
-        th.className = 'border border-slate-200 px-2 py-1 text-xs font-semibold text-center cursor-pointer select-none bg-slate-50 hover:bg-slate-100';
+        th.className =
+          'border border-slate-200 px-2 py-1 text-xs font-semibold text-center cursor-pointer select-none bg-slate-50 hover:bg-slate-100';
         th.addEventListener('click', () => onHeaderClick(colIndex));
         headerTr.appendChild(th);
       }
@@ -259,22 +278,22 @@
         row.forEach(cell => {
           const td = document.createElement('td');
           td.textContent = cell == null ? '' : cell;
-          td.className = 'border border-slate-200 px-2 py-1 text-xs text-center whitespace-nowrap';
-          tbody.appendChild(tr);
+          td.className =
+            'border border-slate-200 px-2 py-1 text-xs text-center whitespace-nowrap';
           tr.appendChild(td);
         });
+        tbody.appendChild(tr);
       });
 
       table.appendChild(tbody);
     }
 
     // ----------------- SORTING ----------------
-
     function onHeaderClick(colIndex) {
       if (!displayedRows.length) return;
 
       if (sortState.colIndex === colIndex) {
-        sortState.direction *=  -1; // toggle
+        sortState.direction *= -1; // toggle
       } else {
         sortState.colIndex = colIndex;
         sortState.direction = 1;
@@ -287,7 +306,6 @@
         const aNorm = norm(aVal);
         const bNorm = norm(bVal);
 
-        // Try numeric compare
         const aNum = parseFloat(aNorm.replace(',', '.'));
         const bNum = parseFloat(bNorm.replace(',', '.'));
         const aIsNum = !isNaN(aNum);
@@ -307,13 +325,12 @@
     }
 
     // ----------------- RESET ------------------
-
     function setupResetButton() {
       const resetBtn = document.getElementById('reset-btn');
       resetBtn.addEventListener('click', () => {
         document
           .querySelectorAll('#colors-container input[type="checkbox"]')
-          .forEach(cb => cb.checked = false);
+          .forEach(cb => (cb.checked = false));
 
         document.getElementById('motif-select').value = '';
         document.getElementById('taille-select').value = '';
@@ -323,15 +340,13 @@
     }
 
     // ----------------- INIT -------------------
-
     window.addEventListener('DOMContentLoaded', async () => {
+      setupResetButton();
       try {
-        setupResetButton();
         await loadData();
       } catch (err) {
         console.error(err);
-        document.getElementById('status').textContent =
-          'Erreur lors du chargement des données : ' + err.message;
+        setStatus('Erreur lors du chargement des données : ' + err.message, true);
       }
     });
   </script>
