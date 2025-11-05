@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <title>Atlas de Plumes</title>
@@ -10,12 +9,13 @@
 <body class="bg-slate-100 min-h-screen">
   <div class="max-w-6xl mx-auto py-6 px-4">
     <h1 class="text-2xl font-bold mb-1">Outil de diagnose des plumes d'oiseaux de France Metropolitaine</h1>
-    <h2 class="text-xl font-bold mb-4">Aude Villeneuve - Thèse d'exercice vétérinaire - 2026</h2>
+    <h2 class="italic text-lg mb-4">Aude Villeneuve - Thèse d'exercice vétérinaire - 2026</h2>
 
     <!-- Filters -->
-    <div class="bg-white rounded-lg shadow p-4 mb-4">
+    <div class="bg-white rounded-lg shadow p-4">
+      <h3 class="mb-4 font-bold">Rentrez les critères de la plume pour en identifier l'espèce</h3>
       <div class="mb-3">
-        <h2 class="font-semibold mb-2">Couleurs</h2>
+        <h2 class="mb-2">Couleurs :</h2>
         <div id="colors-container" class="flex flex-wrap gap-3">
           <!-- checkboxes inserted by JS -->
         </div>
@@ -23,7 +23,7 @@
 
       <div class="flex flex-wrap items-center gap-4">
         <div class="flex items-center gap-2">
-          <label for="motif-select" class="font-semibold">Motif :</label>
+          <label for="motif-select" class="">Motif :</label>
           <select id="motif-select"
                   class="border rounded px-2 py-1 text-sm bg-white">
             <option value="">(Tous)</option>
@@ -31,7 +31,7 @@
         </div>
 
         <div class="flex items-center gap-2">
-          <label for="taille-select" class="font-semibold">Taille :</label>
+          <label for="taille-select" class="">Taille :</label>
           <select id="taille-select"
                   class="border rounded px-2 py-1 text-sm bg-white">
             <option value="">(Toutes)</option>
@@ -40,7 +40,7 @@
 
         <button id="reset-btn"
                 class="ml-auto inline-flex items-center gap-1 border border-slate-300 rounded px-3 py-1 text-sm hover:bg-slate-100">
-          Reset
+          Réinitialiser les filtres
         </button>
       </div>
     </div>
