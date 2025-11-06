@@ -3,58 +3,88 @@
   <meta charset="UTF-8" />
   <title>Atlas de Plumes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon_32x32.png">
   <!-- Tailwind via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Range Slider Component -->
+  <script src="range-slider.js"></script>
 </head>
 <body class="bg-slate-100 min-h-screen">
-  <div class="max-w-6xl mx-auto py-6 px-4">
-    <h1 class="text-2xl font-bold mb-1">Outil de diagnose des plumes d'oiseaux de France Metropolitaine</h1>
-    <h2 class="italic text-lg mb-4">Aude Villeneuve - Thèse d'exercice vétérinaire - 2026</h2>
+  <div class="max-w-6xl mx-auto pt-6 md:pt-10 px-4 md:px-6">
+    <!-- Page Header with improved typography hierarchy -->
+    <header class="mb-8 md:mb-10">
+      <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-slate-900 leading-tight">Outil de diagnose des plumes d'oiseaux de France Metropolitaine</h1>
+      <p class="text-sm md:text-base text-slate-600 font-light">Aude Villeneuve - Thèse d'exercice vétérinaire - 2026</p>
+    </header>
 
-    <!-- Filters -->
-    <div class="bg-white rounded-lg shadow p-4 mb-4">
-      <h3 class="mb-4 font-bold">Rentrez les critères de la plume pour en identifier l'espèce</h3>
-      <div class="mb-3">
-        <h2 class="mb-2">Couleurs :</h2>
+    <!-- Filters with improved spacing and hierarchy -->
+    <div class="bg-white rounded-lg shadow-md p-5 md:p-6 mb-4 md:mb-6">
+      <h2 class="text-lg md:text-xl font-semibold mb-5 md:mb-6 text-slate-900">Critères de recherche</h2>
+      
+      <!-- Couleurs Section with improved spacing -->
+      <div class="mb-6 md:mb-7">
+        <h3 class="text-sm md:text-base font-medium text-slate-700 mb-3">Couleurs</h3>
         <div id="colors-container" class="flex flex-wrap gap-3">
-          <!-- checkboxes inserted by JS -->
+          <!-- color buttons inserted by JS -->
         </div>
       </div>
 
-      <div class="flex flex-wrap items-center gap-4">
-        <div class="flex items-center gap-2">
-          <label for="motif-select" class="">Motif :</label>
-          <select id="motif-select"
-                  class="border rounded px-2 py-1 text-sm bg-white">
-            <option value="">(Tous)</option>
-          </select>
+      <!-- Taille Section with improved spacing -->
+      <div class="mb-6 md:mb-7">
+        <h3 class="text-sm md:text-base font-medium text-slate-700 mb-0 md:mb-3">Taille</h3>
+        <div class="flex items-center gap-3 md:gap-4">
+          <div id="taille-slider-container" class="flex-1">
+            <!-- slider inserted by JS -->
+          </div>
+          <button id="taille-reset-btn" type="button" class="w-9 h-9 md:w-10 md:h-10 flex items-center justify-center rounded-full hover:bg-slate-100 text-slate-400 hover:text-slate-600 transition-colors flex-shrink-0" title="Réinitialiser la taille" aria-label="Réinitialiser la taille">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
         </div>
+      </div>
 
-        <div class="flex items-center gap-2">
-          <label for="taille-select" class="">Taille :</label>
-          <select id="taille-select"
-                  class="border rounded px-2 py-1 text-sm bg-white">
-            <option value="">(Toutes)</option>
-          </select>
+      <!-- Motif Section with improved spacing -->
+      <div class="mb-6 md:mb-7">
+        <h3 class="text-sm md:text-base font-medium text-slate-700 mb-3">Motif</h3>
+        <div id="motif-container" class="flex gap-2 md:gap-3 overflow-x-auto pb-2 scrollbar-thin">
+          <!-- motif buttons inserted by JS -->
         </div>
+      </div>
 
+      <!-- Reset Button with improved spacing -->
+      <div class="flex justify-end pt-2 border-t border-slate-200">
         <button id="reset-btn"
-                class="ml-auto inline-flex items-center gap-1 border border-slate-300 rounded px-3 py-1 text-sm hover:bg-slate-100">
-          Réinitialiser les filtres
+                class="inline-flex items-center gap-2 px-4 py-2 text-sm text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+          </svg>
+          Réinitialiser
         </button>
       </div>
     </div>
+  </div>
 
-    <!-- Table -->
-    <div class="text-xs italic text-right">Cliquez sur une colonne pour trier les résultats</div>
-    <div id="table-wrapper" class="bg-white rounded-lg shadow p-3">
+  <!-- Table section with wider container -->
+  <div class="max-w-[85rem] mx-auto px-4 md:px-6">
+    <!-- Table (desktop) / Cards (mobile) with improved spacing -->
+    <div class="text-xs md:text-sm text-slate-600 text-right mb-3">Cliquez sur une colonne pour trier les résultats</div>
+
+    <!-- Desktop: table visible on md and up -->
+    <div id="table-wrapper" class="hidden md:block bg-white rounded-lg shadow-md overflow-hidden">
       <div class="overflow-auto">
         <table id="results-table" class="min-w-full table-auto border-collapse">
           <!-- populated by JS -->
         </table>
       </div>
-      <p id="status" class="mt-2 text-sm text-gray-600"></p>
     </div>
+
+    <!-- Mobile: cards visible below md -->
+    <div id="cards-container" class="block md:hidden space-y-4">
+      <!-- cards populated by JS -->
+    </div>
+
+    <p id="status" class="mt-4 text-sm md:text-base text-slate-600"></p>
   </div>
 
   <script>
@@ -62,6 +92,9 @@
     const DATA_URL = './base-data.json';
 
     const COLOR_HEADERS = ['Noir', 'Blanc', 'Marron', 'Gris', 'Bleu', 'Jaune', 'Vert', 'Violet'];
+    // RGB colors for each category
+    const COLOR_RGB = ['#000000', '#FFFFFF', '#8B4513', '#808080', '#4169E1', '#FFD700', '#228B22', '#9370DB'];
+    const COLOR_EMOJI = ['⚫', '◻️', '🟫', '⚪', '🔵', '🟡', '🟢', '🟣'];
     const COLOR_START_COL_INDEX = 5;  // F column (0-based)
     const MOTIF_COL_INDEX = 13;       // N column (0-based)
     const TAILLE_COL_INDEX = 4;       // E column (0-based)
@@ -73,6 +106,7 @@
     let displayedRows = [];
     let sortState = { colIndex: null, direction: 1 }; // 1 = A→Z, -1 = Z→A
     let apercuColIndex = null; // index of "Apercu" column
+    let tailleSlider = null; // Range slider component instance
 
     // ----------------- HELPERS ----------------
     function norm(s) {
@@ -86,9 +120,14 @@
 
     function getColorFilters() {
       return COLOR_HEADERS.map((_, idx) => {
-        const cb = document.querySelector(`input[data-color-index="${idx}"]`);
-        return cb ? cb.checked : false;
+        const btn = document.querySelector(`button[data-color-index="${idx}"]`);
+        return btn ? btn.classList.contains('ring-4') : false;
       });
+    }
+
+    function getSelectedMotif() {
+      const selected = document.querySelector('#motif-container button.\\!border-blue-600');
+      return selected ? selected.dataset.motif : '';
     }
 
     function setStatus(msg, isError = false) {
@@ -141,27 +180,57 @@
       const container = document.getElementById('colors-container');
       container.innerHTML = '';
       COLOR_HEADERS.forEach((label, idx) => {
-        const wrapper = document.createElement('label');
-        wrapper.className = 'inline-flex items-center gap-1 text-sm';
-
-        const input = document.createElement('input');
-        input.type = 'checkbox';
-        input.dataset.colorIndex = idx;
-        input.className = 'rounded border-slate-300';
-        input.addEventListener('change', applyFilter);
-
-        const span = document.createElement('span');
-        span.textContent = label;
-
-        wrapper.appendChild(input);
-        wrapper.appendChild(span);
-        container.appendChild(wrapper);
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.dataset.colorIndex = idx;
+        button.title = label; // tooltip
+        button.setAttribute('aria-label', `Filtrer par couleur ${label}`);
+        
+        const bgColor = COLOR_RGB[idx];
+        const isBlack = bgColor === '#000000';
+        const isWhite = bgColor === '#FFFFFF';
+        
+        // Enhanced borders and selection states for accessibility
+        button.style.backgroundColor = bgColor;
+        button.className = 'w-12 h-12 md:w-14 md:h-14 rounded-full border-2 hover:scale-110 transition-all focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2';
+        
+        if (isBlack) {
+          button.style.borderColor = '#6B7280'; // gray border for black
+        } else if (isWhite) {
+          button.style.borderColor = '#6B7280'; // gray border for white
+        } else {
+          button.style.borderColor = bgColor;
+        }
+        
+        button.addEventListener('click', () => {
+          const isSelected = button.classList.contains('ring-4');
+          button.classList.toggle('ring-4');
+          button.classList.toggle('ring-blue-500');
+          button.classList.toggle('ring-offset-2');
+          
+          // Change border to indicate selection for accessibility
+          if (!isSelected) {
+            button.style.borderColor = '#3B82F6'; // blue-500
+            button.style.borderWidth = '3px';
+          } else {
+            button.style.borderWidth = '2px';
+            if (isBlack || isWhite) {
+              button.style.borderColor = '#6B7280';
+            } else {
+              button.style.borderColor = bgColor;
+            }
+          }
+          
+          applyFilter();
+        });
+        
+        container.appendChild(button);
       });
     }
 
     function buildMotifAndTailleOptions() {
-      const motifSelect = document.getElementById('motif-select');
-      const tailleSelect = document.getElementById('taille-select');
+      const motifContainer = document.getElementById('motif-container');
+      const tailleSliderContainer = document.getElementById('taille-slider-container');
 
       const motifsSet = new Set();
       const taillesSet = new Set();
@@ -175,52 +244,96 @@
       });
 
       const motifs = Array.from(motifsSet).sort((a, b) => norm(a).localeCompare(norm(b)));
-      const tailles = Array.from(taillesSet).sort((a, b) => norm(a).localeCompare(norm(b)));
+      
+      // Hardcoded taille order
+      const taillesOrder = ['<10 cm', '[10 -20 cm[', '[20 - 35 cm[', '[35-60 cm['];
 
-      motifSelect.innerHTML = '<option value="">(Tous)</option>' +
-        motifs.map(m => `<option value="${m}">${m}</option>`).join('');
+      // Build Taille range slider - using external component
+      tailleSlider = buildTailleSlider(taillesOrder, tailleSliderContainer, applyFilter);
 
-      tailleSelect.innerHTML = '<option value="">(Toutes)</option>' +
-        tailles.map(t => `<option value="${t}">${t}</option>`).join('');
+      // Taille reset button handler - reset to full range
+      const tailleResetBtn = document.getElementById('taille-reset-btn');
+      if (tailleResetBtn) {
+        tailleResetBtn.addEventListener('click', () => {
+          tailleSlider.reset();
+        });
+      }
 
-      motifSelect.addEventListener('change', applyFilter);
-      tailleSelect.addEventListener('change', applyFilter);
+      // Build Motif buttons (horizontal scroll)
+      motifs.forEach(motif => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.dataset.motif = motif;
+        button.className = 'inline-flex items-center gap-1.5 px-4 py-2 md:px-5 md:py-2.5 rounded-full border-2 border-slate-300 bg-white hover:bg-slate-50 transition-all text-sm font-medium text-slate-700 whitespace-nowrap flex-shrink-0 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2';
+        
+        const label = document.createElement('span');
+        label.textContent = motif;
+        
+        button.appendChild(label);
+        
+        button.addEventListener('click', () => {
+          // Toggle selection (allow deselect)
+          const isSelected = button.classList.contains('!border-blue-600');
+          motifContainer.querySelectorAll('button').forEach(btn => {
+            btn.classList.remove('!border-blue-600', '!bg-blue-50', '!text-blue-700');
+          });
+          if (!isSelected) {
+            button.classList.add('!border-blue-600', '!bg-blue-50', '!text-blue-700');
+          }
+          applyFilter();
+        });
+        
+        motifContainer.appendChild(button);
+      });
     }
 
     // ----------------- FILTER LOGIC -----------
     function filterRows() {
       const colors = getColorFilters();
-      const motifFilter = document.getElementById('motif-select').value;
-      const tailleFilter = document.getElementById('taille-select').value;
+      const motifFilter = getSelectedMotif();
+      const tailleRangeIndices = getSelectedTailleRange();
 
       const motifFilterNorm = motifFilter ? norm(motifFilter) : '';
-      const tailleFilterNorm = tailleFilter ? norm(tailleFilter) : '';
+      const taillesOrder = ['<10 cm', '[10 -20 cm[', '[20 - 35 cm[', '[35-60 cm['];
+
+      // Check if any filters are active
+      const hasColorFilter = colors.some(c => c);
+      const hasMotifFilter = !!motifFilterNorm;
+      const hasTailleFilter = tailleRangeIndices[0] !== 0 || tailleRangeIndices[1] !== 4;
+      const hasAnyFilter = hasColorFilter || hasMotifFilter || hasTailleFilter;
+
+      // If no filters selected, show everything
+      if (!hasAnyFilter) {
+        return dataRows;
+      }
 
       const results = [];
 
       dataRows.forEach(row => {
         let show = true;
 
-        // Colors strict
-        for (let i = 0; i < COLOR_HEADERS.length; i++) {
-          const colIndex = COLOR_START_COL_INDEX + i;
-          const checked = !!colors[i];
-          const hasX = row[colIndex] === 'X';
+        // Colors strict - only apply if color filter is active
+        if (hasColorFilter) {
+          for (let i = 0; i < COLOR_HEADERS.length; i++) {
+            const colIndex = COLOR_START_COL_INDEX + i;
+            const checked = !!colors[i];
+            const hasX = row[colIndex] === 'X';
 
-          if (checked && !hasX) {
-            show = false;
-            break;
-          }
-          if (!checked && hasX) {
-            show = false;
-            break;
+            if (checked && !hasX) {
+              show = false;
+              break;
+            }
+            if (!checked && hasX) {
+              show = false;
+              break;
+            }
           }
         }
 
         if (!show) return;
 
-        // Motif
-        if (motifFilterNorm) {
+        // Motif - only apply if motif filter is active
+        if (hasMotifFilter) {
           const motifNorm = norm(row[MOTIF_COL_INDEX]);
           if (motifNorm !== motifFilterNorm) {
             show = false;
@@ -229,11 +342,19 @@
 
         if (!show) return;
 
-        // Taille
-        if (tailleFilterNorm) {
-          const tailleNorm = norm(row[TAILLE_COL_INDEX]);
-          if (tailleNorm !== tailleFilterNorm) {
-            show = false;
+        // Taille - only apply if taille filter is active
+        if (hasTailleFilter) {
+          const tailleVal = row[TAILLE_COL_INDEX];
+          if (tailleVal) {
+            const tailleIndex = taillesOrder.indexOf(tailleVal);
+            if (tailleIndex !== -1) {
+              const [rangeStart, rangeEnd] = tailleRangeIndices;
+              const categoryIncluded = tailleIndex >= rangeStart && 
+                                      (tailleIndex < rangeEnd || (rangeEnd === 4 && tailleIndex === 3));
+              if (!categoryIncluded) {
+                show = false;
+              }
+            }
           }
         }
 
@@ -262,6 +383,7 @@
 
       if (!displayedRows.length) {
         setStatus('Aucun résultat');
+        renderCards();
         return;
       }
 
@@ -277,7 +399,7 @@
           headerRow2[colIndex] != null ? headerRow2[colIndex] : ('Col ' + (colIndex + 1));
         th.textContent = label;
         th.className =
-          'border border-slate-200 px-2 py-1 text-xs font-semibold text-center cursor-pointer select-none bg-slate-50 hover:bg-slate-100';
+          'border-b-2 border-r border-slate-300 px-4 py-3 text-sm font-semibold text-slate-700 text-center cursor-pointer select-none bg-slate-50 hover:bg-slate-100 transition-colors last:border-r-0';
         th.addEventListener('click', () => onHeaderClick(colIndex));
         headerTr.appendChild(th);
       }
@@ -286,28 +408,27 @@
 
       const tbody = document.createElement('tbody');
 
-      displayedRows.forEach(row => {
+      displayedRows.forEach((row, rowIndex) => {
         const tr = document.createElement('tr');
-        tr.className = 'hover:bg-slate-50';
+        tr.className = 'hover:bg-slate-50 transition-colors' + (rowIndex % 2 === 0 ? ' bg-white' : ' bg-slate-50/30');
 
         row.forEach((cell, colIndex) => {
           const td = document.createElement('td');
           td.className =
-            'border border-slate-200 px-2 py-1 text-xs text-center whitespace-nowrap';
+            'border-b border-r border-slate-200 px-4 py-4 text-sm text-center last:border-r-0';
 
-          // Special rendering for Apercu column: show a button that opens the link
+          // Special rendering for Apercu column: simple text link instead of button
           if (apercuColIndex !== null && colIndex === apercuColIndex) {
             const url = cell == null ? '' : cell.toString().trim();
             if (url) {
-              const btn = document.createElement('button');
-              btn.textContent = 'Aperçu';
-              btn.className =
-                'px-2 py-1 text-xs rounded bg-blue-600 text-white hover:bg-blue-700';
-              btn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                window.open(url, '_blank', 'noopener');
-              });
-              td.appendChild(btn);
+              const link = document.createElement('a');
+              link.textContent = 'Voir';
+              link.href = url;
+              link.target = '_blank';
+              link.rel = 'noopener noreferrer';
+              link.className =
+                'text-blue-600 hover:text-blue-800 underline font-medium transition-colors';
+              td.appendChild(link);
             } else {
               td.textContent = '';
             }
@@ -322,6 +443,110 @@
       });
 
       table.appendChild(tbody);
+
+      // Also render mobile cards
+      renderCards();
+    }
+
+    // ----------------- MOBILE CARDS RENDER ----------
+    function renderCards() {
+      const container = document.getElementById('cards-container');
+      if (!container) return;
+      container.innerHTML = '';
+
+      if (!displayedRows.length) {
+        container.innerHTML = '<div class="text-sm text-slate-600 bg-white rounded-lg shadow-md p-6 text-center">Aucun résultat</div>';
+        return;
+      }
+
+      displayedRows.forEach(row => {
+        const card = document.createElement('div');
+        card.className = 'p-5 md:p-6 border border-slate-200 rounded-lg shadow-sm bg-white hover:shadow-md transition-shadow';
+
+        const content = document.createElement('div');
+        content.className = 'space-y-4';
+
+        // Title (species name) - improved typography
+        const title = document.createElement('h3');
+        title.className = 'font-bold text-lg md:text-xl text-slate-900';
+        title.textContent = row[0] || '';
+
+        // Metadata row: Age, Sexe, Catégorie - improved spacing
+        const metaRow = document.createElement('div');
+        metaRow.className = 'text-sm text-slate-600 space-y-2';
+        
+        const age = row[1] || '';
+        const sexe = row[2] || '';
+        const cat = row[3] || '';
+        
+        if (age || sexe) {
+          const agesexe = document.createElement('div');
+          agesexe.className = 'font-medium';
+          agesexe.textContent = [age, sexe].filter(Boolean).join(' • ');
+          metaRow.appendChild(agesexe);
+        }
+        
+        if (cat) {
+          const catDiv = document.createElement('div');
+          catDiv.innerHTML = `<span class="font-medium text-slate-700">Catégorie:</span> ${cat}`;
+          metaRow.appendChild(catDiv);
+        }
+
+        // Compact badges: colors (emojis) + taille + motif - improved spacing
+        const badges = document.createElement('div');
+        badges.className = 'flex flex-wrap gap-2';
+
+        // Color badges from COLOR_HEADERS
+        for (let i = 0; i < COLOR_HEADERS.length; i++) {
+          const colIndex = COLOR_START_COL_INDEX + i;
+          if (row[colIndex] === 'X') {
+            const span = document.createElement('span');
+            span.className = 'inline-flex items-center px-3 py-1.5 rounded-full bg-slate-100 border border-slate-300 text-xs font-medium';
+            span.textContent = `${COLOR_EMOJI[i]} ${COLOR_HEADERS[i]}`;
+            badges.appendChild(span);
+          }
+        }
+
+        // taille badge with ruler emoji
+        const taille = row[TAILLE_COL_INDEX] || '';
+        if (taille) {
+          const t = document.createElement('span');
+          t.className = 'inline-flex items-center px-3 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-xs font-medium text-blue-700';
+          t.textContent = `📏 ${taille}`;
+          badges.appendChild(t);
+        }
+
+        // motif badge with paint emoji
+        const motif = row[MOTIF_COL_INDEX] || '';
+        if (motif) {
+          const m = document.createElement('span');
+          m.className = 'inline-flex items-center px-3 py-1.5 rounded-full bg-purple-50 border border-purple-200 text-xs font-medium text-purple-700';
+          m.textContent = `🎨 ${motif}`;
+          badges.appendChild(m);
+        }
+
+        content.appendChild(title);
+        if (metaRow.children.length > 0) content.appendChild(metaRow);
+        if (badges.children.length > 0) content.appendChild(badges);
+
+        // Aperçu link - changed from button to text link
+        const apercuUrl = apercuColIndex !== null ? (row[apercuColIndex] || '') : '';
+        if (apercuUrl) {
+          const linkWrapper = document.createElement('div');
+          linkWrapper.className = 'pt-3 border-t border-slate-200';
+          const link = document.createElement('a');
+          link.href = apercuUrl;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          link.className = 'inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors';
+          link.innerHTML = '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg> Voir l\'aperçu';
+          linkWrapper.appendChild(link);
+          content.appendChild(linkWrapper);
+        }
+
+        card.appendChild(content);
+        container.appendChild(card);
+      });
     }
 
     // ----------------- SORTING ----------------
@@ -364,12 +589,34 @@
     function setupResetButton() {
       const resetBtn = document.getElementById('reset-btn');
       resetBtn.addEventListener('click', () => {
+        // Reset color buttons
         document
-          .querySelectorAll('#colors-container input[type="checkbox"]')
-          .forEach(cb => (cb.checked = false));
+          .querySelectorAll('#colors-container button')
+          .forEach(btn => {
+            btn.classList.remove('ring-4', 'ring-blue-500', 'ring-offset-2');
+            const idx = parseInt(btn.dataset.colorIndex);
+            const bgColor = COLOR_RGB[idx];
+            const isBlack = bgColor === '#000000';
+            const isWhite = bgColor === '#FFFFFF';
+            btn.style.borderWidth = '2px';
+            if (isBlack || isWhite) {
+              btn.style.borderColor = '#6B7280';
+            } else {
+              btn.style.borderColor = bgColor;
+            }
+          });
 
-        document.getElementById('motif-select').value = '';
-        document.getElementById('taille-select').value = '';
+        // Reset taille slider
+        if (tailleSlider) {
+          tailleSlider.reset();
+        }
+
+        // Reset motif buttons
+        document
+          .querySelectorAll('#motif-container button')
+          .forEach(btn => {
+            btn.classList.remove('!border-blue-600', '!bg-blue-50', '!text-blue-700');
+          });
 
         applyFilter();
       });
