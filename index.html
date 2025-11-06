@@ -204,21 +204,22 @@
         
         button.addEventListener('click', () => {
           const isSelected = button.classList.contains('ring-4');
-          button.classList.toggle('ring-4');
-          button.classList.toggle('ring-blue-500');
-          button.classList.toggle('ring-offset-2');
           
-          // Change border to indicate selection for accessibility
-          if (!isSelected) {
-            button.style.borderColor = '#3B82F6'; // blue-500
-            button.style.borderWidth = '3px';
-          } else {
+          // Toggle selection classes
+          if (isSelected) {
+            // Deselecting
+            button.classList.remove('ring-4', 'ring-blue-500', 'ring-offset-2');
             button.style.borderWidth = '2px';
             if (isBlack || isWhite) {
               button.style.borderColor = '#6B7280';
             } else {
               button.style.borderColor = bgColor;
             }
+          } else {
+            // Selecting
+            button.classList.add('ring-4', 'ring-blue-500', 'ring-offset-2');
+            button.style.borderColor = '#3B82F6'; // blue-500
+            button.style.borderWidth = '3px';
           }
           
           applyFilter();
@@ -312,21 +313,23 @@
       dataRows.forEach(row => {
         let show = true;
 
-        // Colors strict - only apply if color filter is active
+        // Colors - only apply if color filter is active
+        // Show row if it has ANY of the selected colors (OR logic)
         if (hasColorFilter) {
+          let hasMatchingColor = false;
           for (let i = 0; i < COLOR_HEADERS.length; i++) {
             const colIndex = COLOR_START_COL_INDEX + i;
             const checked = !!colors[i];
             const hasX = row[colIndex] === 'X';
 
-            if (checked && !hasX) {
-              show = false;
+            if (checked && hasX) {
+              hasMatchingColor = true;
               break;
             }
-            if (!checked && hasX) {
-              show = false;
-              break;
-            }
+          }
+          
+          if (!hasMatchingColor) {
+            show = false;
           }
         }
 
