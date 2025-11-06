@@ -313,23 +313,24 @@
       dataRows.forEach(row => {
         let show = true;
 
-        // Colors - only apply if color filter is active
-        // Show row if it has ANY of the selected colors (OR logic)
+        // Colors strict - only apply if color filter is active
+        // Entry must have EXACTLY the selected colors (AND logic)
         if (hasColorFilter) {
-          let hasMatchingColor = false;
           for (let i = 0; i < COLOR_HEADERS.length; i++) {
             const colIndex = COLOR_START_COL_INDEX + i;
             const checked = !!colors[i];
             const hasX = row[colIndex] === 'X';
 
-            if (checked && hasX) {
-              hasMatchingColor = true;
+            // If checked and row doesn't have it, exclude
+            if (checked && !hasX) {
+              show = false;
               break;
             }
-          }
-          
-          if (!hasMatchingColor) {
-            show = false;
+            // If not checked but row has it, exclude
+            if (!checked && hasX) {
+              show = false;
+              break;
+            }
           }
         }
 
