@@ -1,0 +1,23 @@
+{
+  "title": "SAM with Metadata Pre-filling",
+  "type": "object",
+  "required": ["model_path"],
+  "properties": {
+    "model_path": {
+      "type": "string",
+      "description": "Path to SAM model checkpoint file (e.g., models/sam_vit_b_01ec64.pth)"
+    },
+    "model_type": {
+      "type": "string",
+      "enum": ["vit_b", "vit_l", "vit_h"],
+      "default": "vit_b",
+      "description": "SAM model architecture type"
+    },
+    "device": {
+      "type": "string",
+      "enum": ["cpu", "cuda", "mps"],
+      "default": "cpu",
+      "description": "Device to run the model on"
+    }
+  }
+}

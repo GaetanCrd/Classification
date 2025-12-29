@@ -1,0 +1,70 @@
+<View>
+  <Header value="Labeling des plumes - YOLO Training"/>
+  
+  <!-- Display existing metadata and defaults -->
+  <View style="background-color: #f0f8ff; padding: 15px; margin-bottom: 20px; border-radius: 8px; border-left: 4px solid #3b82f6;">
+    <Header value="📊 Métadonnées de l'image" size="4"/>
+    <Text name="metadata" value="$metadata" 
+          style="white-space: pre-line; font-family: monospace; font-size: 14px; line-height: 1.6; margin-bottom: 10px;"/>
+    
+    <View style="background-color: #fff3cd; padding: 10px; margin-top: 10px; border-radius: 5px; border: 2px solid #ffc107;">
+      <Header value="⚠️ VALEURS PAR DÉFAUT À UTILISER" size="5"/>
+      <Text name="hint" value="Pour chaque plume détectée, sélectionnez:" style="font-weight: bold; margin-bottom: 5px;"/>
+      <List>
+        <Text value="🎨 Couleurs: $default_colors"/>
+        <Text value="📏 Taille: $default_taille"/>
+        <Text value="✨ Motif: $default_motif"/>
+      </List>
+    </View>
+  </View>
+  
+  <!-- Image display -->
+  <Image name="image" value="$image" zoom="true" zoomControl="true" rotateControl="true"/>
+  
+  <!-- Bounding boxes for feathers -->
+  <RectangleLabels name="feathers" toName="image" strokeWidth="3">
+    <Label value="Plume" background="#FF6B6B"/>
+  </RectangleLabels>
+  
+  <!-- Attributes for each bounding box -->
+  <View visibleWhen="region-selected">
+    <Header value="Attributs de la plume sélectionnée" size="4"/>
+    
+    <!-- Colors (multi-select) -->
+    <Choices name="colors" toName="image" perRegion="true" 
+             choice="multiple" showInline="true">
+      <Header value="Couleurs (sélection multiple)"/>
+      <Choice value="Noir" style="background-color: #000000; color: white;"/>
+      <Choice value="Blanc" style="background-color: #FFFFFF; color: black; border: 1px solid #ccc;"/>
+      <Choice value="Marron" style="background-color: #8B4513; color: white;"/>
+      <Choice value="Gris" style="background-color: #808080; color: white;"/>
+      <Choice value="Bleu" style="background-color: #4169E1; color: white;"/>
+      <Choice value="Jaune" style="background-color: #FFD700; color: black;"/>
+      <Choice value="Vert" style="background-color: #228B22; color: white;"/>
+      <Choice value="Violet" style="background-color: #9370DB; color: white;"/>
+    </Choices>
+    
+    <!-- Size -->
+    <Choices name="taille" toName="image" perRegion="true" 
+             choice="single" showInline="true">
+      <Header value="Taille"/>
+      <Choice value="&lt;10 cm"/>
+      <Choice value="[10 -20 cm["/>
+      <Choice value="[20 - 35 cm["/>
+      <Choice value="[35-60 cm["/>
+    </Choices>
+    
+    <!-- Motif -->
+    <Choices name="motif" toName="image" perRegion="true" 
+             choice="single" showInline="true">
+      <Header value="Motif"/>
+      <Choice value="Aucun"/>
+      <Choice value="Rayé"/>
+      <Choice value="Tâché"/>
+      <Choice value="Liseré"/>
+      <Choice value="Dégradé"/>
+      <Choice value="Irisé"/>
+      <Choice value="Autre"/>
+    </Choices>
+  </View>
+</View>

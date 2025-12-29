@@ -8,22 +8,138 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Range Slider Component -->
   <script src="range-slider.js"></script>
+  <!-- Helper Modal Component -->
+  <script src="helper-modal.js"></script>
+  <!-- Catégorie Helper Modal Component -->
+  <script src="categorie-helper-modal.js"></script>
+  <!-- Motif Image Modal Component -->
+  <script src="motif-image-modal.js"></script>
+  <!-- Couleur Image Modal Component -->
+  <script src="couleur-image-modal.js"></script>
+  
+  <style>
+    /* Thumbnail preview on hover */
+    .preview-link {
+      position: relative;
+    }
+    
+    .preview-thumbnail {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 12px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+      background: white;
+      padding: 8px;
+      pointer-events: none;
+      max-width: 600px;
+      max-height: 90vh;
+    }
+    
+    .preview-thumbnail img {
+      max-width: 580px;
+      max-height: calc(90vh - 16px);
+      width: auto;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+    }
+    
+    /* Only show hover effect on devices with hover capability (not mobile) */
+    @media (hover: hover) and (pointer: fine) {
+      .preview-link:hover .preview-thumbnail {
+        display: block;
+        animation: fadeIn 0.2s ease-in;
+      }
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+    
+    /* Ensure parent containers allow overflow */
+    #table-wrapper,
+    #cards-container {
+      overflow: visible !important;
+    }
+    
+    #table-wrapper > div {
+      overflow-x: auto;
+      overflow-y: visible;
+    }
+  </style>
 </head>
 <body class="bg-slate-100 min-h-screen">
-  <div class="max-w-6xl mx-auto pt-6 md:pt-10 px-4 md:px-6">
-    <!-- Page Header with improved typography hierarchy -->
-    <header class="mb-8 md:mb-10">
+  <!-- Desktop: Logos in top left with minimal padding -->
+  <div class="hidden md:flex items-center gap-3 p-2">
+    <img src="LOGO-OFB.png" alt="Logo OFB" class="h-14 w-auto">
+    <img src="envt_fond_transparent.png" alt="Logo ENVT" class="h-14 w-auto">
+  </div>
+
+  <!-- Header Container -->
+  <div class="max-w-6xl mx-auto pt-4 md:pt-6 px-4 md:px-6">
+    <!-- Page Header -->
+    <header class="mb-6 md:mb-8">
       <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-slate-900 leading-tight">Outil de diagnose des plumes d'oiseaux de France Metropolitaine</h1>
       <p class="text-sm md:text-base text-slate-600 font-light">Aude Villeneuve - Thèse d'exercice vétérinaire - 2026</p>
+      
+      <!-- Mobile: Logos below description -->
+      <div class="flex md:hidden items-center gap-3 mt-4 justify-center">
+        <img src="LOGO-OFB.png" alt="Logo OFB" class="h-12 w-auto">
+        <img src="envt_fond_transparent.png" alt="Logo ENVT" class="h-12 w-auto">
+      </div>
     </header>
+  </div>
 
-    <!-- Filters with improved spacing and hierarchy -->
-    <div class="bg-white rounded-lg shadow-md p-5 md:p-6 mb-4 md:mb-6">
-      <h2 class="text-lg md:text-xl font-semibold mb-5 md:mb-6 text-slate-900">Critères de recherche</h2>
+  <!-- Filters Container - Centered with margins -->
+  <div class="mx-4 md:mx-8 lg:mx-12 mb-4">
+    <!-- Filters with image on the right (desktop) / helper button (mobile) -->
+    <div class="md:flex md:gap-3 md:items-start md:justify-center">
+      <!-- Filters Section -->
+      <div class="bg-white rounded-lg shadow-md p-4 md:p-5 flex-1" id="filters-section">
+        <h2 class="text-lg md:text-xl font-semibold mb-4 md:mb-5 text-slate-900">Critères de recherche</h2>
       
       <!-- Couleurs Section with improved spacing -->
       <div class="mb-6 md:mb-7">
-        <h3 class="text-sm md:text-base font-medium text-slate-700 mb-3">Couleurs</h3>
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="text-sm md:text-base font-medium text-slate-700">Couleurs</h3>
+          
+          <!-- Mobile: Helper Button for Colour Guide -->
+          <button 
+            id="couleur-helper-btn-mobile"
+            class="md:hidden w-8 h-8 flex items-center justify-center rounded-full bg-blue-500 hover:bg-blue-600 text-white transition-colors shadow-md"
+            aria-label="Aide sur les couleurs"
+            title="Voir le guide des nuances"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+            </svg>
+          </button>
+          
+          <!-- Desktop: Helper Button for Colour Guide -->
+          <button 
+            id="couleur-helper-btn-desktop"
+            class="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500 hover:bg-blue-600 text-white text-sm transition-colors shadow-md"
+            aria-label="Aide sur les couleurs"
+            title="Voir le guide des nuances"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+            </svg>
+            <span>Guide des nuances</span>
+          </button>
+        </div>
+        <p class="text-xs md:text-sm text-slate-600 mb-3">Sélectionnez <strong class="font-semibold">TOUTES</strong> les couleurs présentes</p>
         <div id="colors-container" class="flex flex-wrap gap-3">
           <!-- color buttons inserted by JS -->
         </div>
@@ -46,7 +162,22 @@
 
       <!-- Motif Section with improved spacing -->
       <div class="mb-6 md:mb-7">
-        <h3 class="text-sm md:text-base font-medium text-slate-700 mb-3">Motif</h3>
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="text-sm md:text-base font-medium text-slate-700">Motif</h3>
+          
+          <!-- Mobile: Helper Button for Motif Guide -->
+          <button 
+            id="helper-btn"
+            class="md:hidden w-8 h-8 flex items-center justify-center rounded-full bg-blue-500 hover:bg-blue-600 text-white transition-colors shadow-md"
+            aria-label="Aide sur les motifs"
+            title="Voir le guide des motifs"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </button>
+        </div>
+        <p class="text-xs md:text-sm text-slate-600 mb-3">Sélectionnez le motif <strong class="font-semibold">DOMINANT</strong></p>
         <div id="motif-container" class="flex gap-2 md:gap-3 overflow-x-auto pb-2 scrollbar-thin">
           <!-- motif buttons inserted by JS -->
         </div>
@@ -61,6 +192,35 @@
           </svg>
           Réinitialiser
         </button>
+      </div>
+      </div>
+      
+      <!-- Desktop: Motif Images Guide on the right -->
+      <div class="hidden md:flex flex-col bg-white rounded-lg shadow-md p-3 flex-shrink-0" style="width: 540px;" id="motif-guide-section">
+        <h3 class="text-base font-semibold mb-2 text-slate-900">Guide des motifs</h3>
+        <div class="grid grid-cols-2 gap-2 overflow-y-auto flex-1">
+          <div class="flex flex-col items-center cursor-pointer hover:opacity-80 transition-opacity motif-image-item" data-src="motif_img_help/Aucun.jpg" data-name="Aucun">
+            <img src="motif_img_help/Aucun.jpg" alt="Aucun motif" class="w-full h-auto rounded-lg shadow-sm">
+          </div>
+          <div class="flex flex-col items-center cursor-pointer hover:opacity-80 transition-opacity motif-image-item" data-src="motif_img_help/Dégradé.jpg" data-name="Dégradé">
+            <img src="motif_img_help/Dégradé.jpg" alt="Motif dégradé" class="w-full h-auto rounded-lg shadow-sm">
+          </div>
+          <div class="flex flex-col items-center cursor-pointer hover:opacity-80 transition-opacity motif-image-item" data-src="motif_img_help/Irisé.jpg" data-name="Irisé">
+            <img src="motif_img_help/Irisé.jpg" alt="Motif irisé" class="w-full h-auto rounded-lg shadow-sm">
+          </div>
+          <div class="flex flex-col items-center cursor-pointer hover:opacity-80 transition-opacity motif-image-item" data-src="motif_img_help/Liseré.jpg" data-name="Liseré">
+            <img src="motif_img_help/Liseré.jpg" alt="Motif liseré" class="w-full h-auto rounded-lg shadow-sm">
+          </div>
+          <div class="flex flex-col items-center cursor-pointer hover:opacity-80 transition-opacity motif-image-item" data-src="motif_img_help/Piqueté.jpg" data-name="Piqueté">
+            <img src="motif_img_help/Piqueté.jpg" alt="Motif piqueté" class="w-full h-auto rounded-lg shadow-sm">
+          </div>
+          <div class="flex flex-col items-center cursor-pointer hover:opacity-80 transition-opacity motif-image-item" data-src="motif_img_help/Rayé.jpg" data-name="Rayé">
+            <img src="motif_img_help/Rayé.jpg" alt="Motif rayé" class="w-full h-auto rounded-lg shadow-sm">
+          </div>
+          <div class="flex flex-col items-center cursor-pointer hover:opacity-80 transition-opacity motif-image-item" data-src="motif_img_help/Tâché.jpg" data-name="Tâché">
+            <img src="motif_img_help/Tâché.jpg" alt="Motif tâché" class="w-full h-auto rounded-lg shadow-sm">
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -82,6 +242,16 @@
     <!-- Mobile: cards visible below md -->
     <div id="cards-container" class="block md:hidden space-y-4">
       <!-- cards populated by JS -->
+    </div>
+
+    <!-- Info card - shown on both mobile and desktop when there are results -->
+    <div id="info-card-desktop" class="hidden bg-white rounded-lg shadow-md p-6 mt-4">
+      <p class="text-sm text-slate-600">
+        Outre les couleurs, la taille et le motif, d'autres critères comme la forme de la plume ou la longueur du calamus sont à considérer pour affiner l'identification.
+        <button id="show-calamus-btn" class="ml-2 inline-flex items-center px-3 py-1 rounded-full bg-blue-500 hover:bg-blue-600 text-white text-xs font-medium transition-colors shadow-sm">
+          Voir l'image
+        </button>
+      </p>
     </div>
 
     <p id="status" class="mt-4 text-sm md:text-base text-slate-600"></p>
@@ -382,15 +552,29 @@
     // ----------------- TABLE RENDER -----------
     function renderTable() {
       const table = document.getElementById('results-table');
+      const infoCard = document.getElementById('info-card-desktop');
 
       table.innerHTML = '';
 
       if (!displayedRows.length) {
-        setStatus('Aucun résultat');
+        setStatus('0 résultat');
+        // Hide the info card when no results
+        if (infoCard) infoCard.classList.add('hidden');
+        // Display the help message in the table area for desktop
+        const tr = document.createElement('tr');
+        const td = document.createElement('td');
+        td.colSpan = 100;
+        td.className = 'p-6 text-sm text-slate-600';
+        td.innerHTML = '<p class="font-semibold mb-3">Les critères sélectionnés ne permettent pas de fournir une diagnose d\'espèce.</p><p class="mb-2">En cas d\'hésitation sur le motif dominant, vous pouvez décocher le critère "Motif" pour afficher une sélection plus large de plume. Si cela ne suffit pas, vérifier votre exhaustivité dans le choix des couleurs. En cas d\'hésitation entre "Marron" et "Gris", cocher les deux. Enfin, vous pouvez jouer avec le curseur de taille pour sélectionner un intervalle de taille plus ou moins large.</p><p class="mt-3">Si vous n\'avez toujours aucun résultat, il est possible que la plume que vous cherchez à identifier ne soit pas documentée dans la base de donnée.</p>';
+        tr.appendChild(td);
+        table.appendChild(tr);
         renderCards();
         return;
       }
 
+      // Show the info card when there are results
+      if (infoCard) infoCard.classList.remove('hidden');
+      
       setStatus(displayedRows.length + ' résultat(s)');
 
       const thead = document.createElement('thead');
@@ -401,7 +585,32 @@
         const th = document.createElement('th');
         const label =
           headerRow2[colIndex] != null ? headerRow2[colIndex] : ('Col ' + (colIndex + 1));
-        th.textContent = label;
+        
+        // Check if this is the "Catégorie de plumes" column
+        const normalizedLabel = norm(label);
+        if (normalizedLabel === 'categorie de plumes' || normalizedLabel === 'categorie') {
+          // Create a container for label + button
+          const container = document.createElement('div');
+          container.className = 'flex items-center justify-center gap-2';
+          
+          const labelSpan = document.createElement('span');
+          labelSpan.textContent = label;
+          
+          const helperBtn = document.createElement('button');
+          helperBtn.id = 'categorie-helper-btn-desktop';
+          helperBtn.className = 'w-5 h-5 flex items-center justify-center rounded-full bg-blue-500 hover:bg-blue-600 text-white transition-colors flex-shrink-0';
+          helperBtn.innerHTML = '<span class="text-xs font-bold">?</span>';
+          helperBtn.title = 'Aide sur les catégories de plumes';
+          helperBtn.setAttribute('aria-label', 'Aide sur les catégories de plumes');
+          // The click will be handled by event delegation in categorie-helper-modal.js
+          
+          container.appendChild(labelSpan);
+          container.appendChild(helperBtn);
+          th.appendChild(container);
+        } else {
+          th.textContent = label;
+        }
+        
         th.className =
           'border-b-2 border-r border-slate-300 px-4 py-3 text-sm font-semibold text-slate-700 text-center cursor-pointer select-none bg-slate-50 hover:bg-slate-100 transition-colors last:border-r-0';
         th.addEventListener('click', () => onHeaderClick(colIndex));
@@ -425,6 +634,9 @@
           if (apercuColIndex !== null && colIndex === apercuColIndex) {
             const url = cell == null ? '' : cell.toString().trim();
             if (url) {
+              const wrapper = document.createElement('span');
+              wrapper.className = 'preview-link inline-block';
+              
               const link = document.createElement('a');
               link.textContent = 'Voir';
               link.href = url;
@@ -432,7 +644,18 @@
               link.rel = 'noopener noreferrer';
               link.className =
                 'text-blue-600 hover:text-blue-800 underline font-medium transition-colors';
-              td.appendChild(link);
+              
+              const thumbnail = document.createElement('div');
+              thumbnail.className = 'preview-thumbnail';
+              const img = document.createElement('img');
+              img.src = url;
+              img.alt = 'Aperçu de la plume';
+              img.loading = 'lazy';
+              thumbnail.appendChild(img);
+              
+              wrapper.appendChild(link);
+              wrapper.appendChild(thumbnail);
+              td.appendChild(wrapper);
             } else {
               td.textContent = '';
             }
@@ -459,7 +682,7 @@
       container.innerHTML = '';
 
       if (!displayedRows.length) {
-        container.innerHTML = '<div class="text-sm text-slate-600 bg-white rounded-lg shadow-md p-6 text-center">Aucun résultat</div>';
+        container.innerHTML = '<div class="text-sm text-slate-600 bg-white rounded-lg shadow-md p-6"><p class="font-semibold mb-3">Les critères sélectionnés ne permettent pas de fournir une diagnose d\'espèce.</p><p class="mb-2">En cas d\'hésitation sur le motif dominant, vous pouvez décocher le critère "Motif" pour afficher une sélection plus large de plume. Si cela ne suffit pas, vérifier votre exhaustivité dans le choix des couleurs. En cas d\'hésitation entre "Marron" et "Gris", cocher les deux. Enfin, vous pouvez jouer avec le curseur de taille pour sélectionner un intervalle de taille plus ou moins large.</p><p class="mt-3">Si vous n\'avez toujours aucun résultat, il est possible que la plume que vous cherchez à identifier ne soit pas documentée dans la base de donnée.</p></div>';
         return;
       }
 
@@ -492,7 +715,19 @@
         
         if (cat) {
           const catDiv = document.createElement('div');
-          catDiv.innerHTML = `<span class="font-medium text-slate-700">Catégorie:</span> ${cat}`;
+          catDiv.className = 'flex items-center gap-2';
+          
+          const catText = document.createElement('span');
+          catText.innerHTML = `<span class="font-medium text-slate-700">Catégorie:</span> ${cat}`;
+          
+          const helperBtn = document.createElement('button');
+          helperBtn.className = 'categorie-helper-btn-mobile w-6 h-6 flex items-center justify-center rounded-full bg-blue-500 hover:bg-blue-600 text-white transition-colors flex-shrink-0 shadow-sm';
+          helperBtn.innerHTML = '<span class="text-xs font-bold">?</span>';
+          helperBtn.title = 'Aide sur les catégories de plumes';
+          helperBtn.setAttribute('aria-label', 'Aide sur les catégories de plumes');
+          
+          catDiv.appendChild(catText);
+          catDiv.appendChild(helperBtn);
           metaRow.appendChild(catDiv);
         }
 
@@ -538,13 +773,28 @@
         if (apercuUrl) {
           const linkWrapper = document.createElement('div');
           linkWrapper.className = 'pt-3 border-t border-slate-200';
+          
+          const previewWrapper = document.createElement('span');
+          previewWrapper.className = 'preview-link inline-block';
+          
           const link = document.createElement('a');
           link.href = apercuUrl;
           link.target = '_blank';
           link.rel = 'noopener noreferrer';
           link.className = 'inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors';
           link.innerHTML = '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg> Voir l\'aperçu';
-          linkWrapper.appendChild(link);
+          
+          const thumbnail = document.createElement('div');
+          thumbnail.className = 'preview-thumbnail';
+          const img = document.createElement('img');
+          img.src = apercuUrl;
+          img.alt = 'Aperçu de la plume';
+          img.loading = 'lazy';
+          thumbnail.appendChild(img);
+          
+          previewWrapper.appendChild(link);
+          previewWrapper.appendChild(thumbnail);
+          linkWrapper.appendChild(previewWrapper);
           content.appendChild(linkWrapper);
         }
 
@@ -626,9 +876,105 @@
       });
     }
 
+    // ----------------- CALAMUS MODAL -------------------
+    function createCalamusModal() {
+      const modal = document.createElement('div');
+      modal.id = 'calamus-modal';
+      modal.className = 'fixed inset-0 z-50 hidden';
+      modal.innerHTML = `
+        <!-- Backdrop -->
+        <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity" id="calamus-modal-backdrop"></div>
+        
+        <!-- Modal Content -->
+        <div class="fixed inset-0 overflow-y-auto">
+          <div class="flex min-h-full items-center justify-center p-4">
+            <div class="relative bg-white rounded-lg shadow-xl max-w-4xl w-full">
+              <!-- Close Button -->
+              <button 
+                id="close-calamus-modal-btn"
+                class="absolute top-3 right-3 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-white hover:bg-slate-100 text-slate-600 hover:text-slate-900 transition-colors shadow-md"
+                aria-label="Fermer"
+              >
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              
+              <!-- Image Container -->
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-4 text-slate-900">Structure de la plume</h3>
+                <img 
+                  src="Calamus.png" 
+                  alt="Calamus" 
+                  class="w-full h-auto rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      
+      document.body.appendChild(modal);
+      return modal;
+    }
+
+    function showCalamusModal() {
+      const modal = document.getElementById('calamus-modal');
+      if (modal) {
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function hideCalamusModal() {
+      const modal = document.getElementById('calamus-modal');
+      if (modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    }
+
+    function setupCalamusModal() {
+      // Create the modal
+      createCalamusModal();
+
+      // Desktop button click
+      document.addEventListener('click', (e) => {
+        if (e.target && e.target.id === 'show-calamus-btn') {
+          showCalamusModal();
+        }
+        // Mobile button click (using class since it's dynamically created)
+        if (e.target && e.target.classList.contains('show-calamus-btn')) {
+          showCalamusModal();
+        }
+      });
+
+      // Close button click
+      document.addEventListener('click', (e) => {
+        if (e.target && (e.target.id === 'close-calamus-modal-btn' || e.target.closest('#close-calamus-modal-btn'))) {
+          hideCalamusModal();
+        }
+      });
+
+      // Backdrop click
+      document.addEventListener('click', (e) => {
+        if (e.target && e.target.id === 'calamus-modal-backdrop') {
+          hideCalamusModal();
+        }
+      });
+
+      // ESC key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          hideCalamusModal();
+        }
+      });
+    }
+
     // ----------------- INIT -------------------
     window.addEventListener('DOMContentLoaded', async () => {
       setupResetButton();
+      setupCalamusModal();
       try {
         await loadData();
       } catch (err) {
@@ -637,5 +983,14 @@
       }
     });
   </script>
+
+  <!-- Footer -->
+  <footer class="mt-12 md:mt-16 bg-slate-800 text-slate-300">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-10">
+      <p class="text-sm md:text-base leading-relaxed text-center">
+        Cet outil est une banque d'image destinée à l'identification des plumes des oiseaux de France métropolitaine, élaboré en partenariat avec l'Office Français de la Biodiversité. Les plumes illustrées ont été prélevées sur des individus décédés au Centre de soin de la faune sauvage de l'Ecole Nationale Vétérinaire de Toulouse.
+      </p>
+    </div>
+  </footer>
 </body>
 </html>

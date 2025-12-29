@@ -1,0 +1,35 @@
+ * Serving Flask app "label_studio_ml.api" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.122.10.14:9090/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2025 00:44:48] "GET /health HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2025 00:44:53] "GET /health HTTP/1.1" 200 -
+INFO:model:Loading SAM model: vit_b from /Users/pierrebastiani/Classification/custom_ml_backend/models/sam_vit_b_01ec64.pth
+INFO:model:Using device: cpu
+ERROR:model:Failed to parse label config: 
+ERROR:model:Traceback: Traceback (most recent call last):
+  File "/Users/pierrebastiani/Classification/custom_ml_backend/model.py", line 83, in __init__
+    self.from_name, self.to_name, self.value = get_single_tag_keys(
+                                               ~~~~~~~~~~~~~~~~~~~^
+        self.parsed_label_config, 'RectangleLabels', 'Image'
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/pierrebastiani/Classification/.venv/lib/python3.13/site-packages/label_studio_ml/utils.py", line 22, in get_single_tag_keys
+    assert len(parsed_label_config) == 1
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+INFO:model:Parsed label config: {'feathers': {'type': 'RectangleLabels', 'to_name': ['image'], 'inputs': [{'type': 'Image', 'value': 'image'}], 'labels': ['Plume'], 'labels_attrs': {'Plume': {'value': 'Plume', 'background': '#FF6B6B'}}}, 'colors': {'type': 'Choices', 'to_name': ['image'], 'inputs': [{'type': 'Image', 'value': 'image'}], 'labels': ['Noir', 'Blanc', 'Marron', 'Gris', 'Bleu', 'Jaune', 'Vert', 'Violet'], 'labels_attrs': {'Noir': {'value': 'Noir', 'style': 'background-color: #000000; color: white;'}, 'Blanc': {'value': 'Blanc', 'style': 'background-color: #FFFFFF; color: black; border: 1px solid #ccc;'}, 'Marron': {'value': 'Marron', 'style': 'background-color: #8B4513; color: white;'}, 'Gris': {'value': 'Gris', 'style': 'background-color: #808080; color: white;'}, 'Bleu': {'value': 'Bleu', 'style': 'background-color: #4169E1; color: white;'}, 'Jaune': {'value': 'Jaune', 'style': 'background-color: #FFD700; color: black;'}, 'Vert': {'value': 'Vert', 'style': 'background-color: #228B22; color: white;'}, 'Violet': {'value': 'Violet', 'style': 'background-color: #9370DB; color: white;'}}}, 'taille': {'type': 'Choices', 'to_name': ['image'], 'inputs': [{'type': 'Image', 'value': 'image'}], 'labels': ['<10 cm', '[10 -20 cm[', '[20 - 35 cm[', '[35-60 cm['], 'labels_attrs': {'<10 cm': {'value': '<10 cm'}, '[10 -20 cm[': {'value': '[10 -20 cm['}, '[20 - 35 cm[': {'value': '[20 - 35 cm['}, '[35-60 cm[': {'value': '[35-60 cm['}}}, 'motif': {'type': 'Choices', 'to_name': ['image'], 'inputs': [{'type': 'Image', 'value': 'image'}], 'labels': ['Aucun', 'Rayé', 'Tâché', 'Liseré', 'Dégradé', 'Irisé', 'Autre'], 'labels_attrs': {'Aucun': {'value': 'Aucun'}, 'Rayé': {'value': 'Rayé'}, 'Tâché': {'value': 'Tâché'}, 'Liseré': {'value': 'Liseré'}, 'Dégradé': {'value': 'Dégradé'}, 'Irisé': {'value': 'Irisé'}, 'Autre': {'value': 'Autre'}}}}
+INFO:model:Using fallback defaults: from_name=feathers, to_name=image, value=image
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2025 00:44:54] "POST /setup HTTP/1.1" 200 -
+INFO:model:Resolved local file: /data/local-files/?d=images/Accipiter_gentilis_(Autour_des_palombes)/Accipiter_gentilis_Rectrices.jpg -> /Users/pierrebastiani/Classification/images/Accipiter_gentilis_(Autour_des_palombes)/Accipiter_gentilis_Rectrices.jpg
+INFO:model:Using defaults: {'colors': ['Blanc', 'Gris', 'Marron'], 'taille': '[20 - 35 cm[', 'motif': 'Rayé'}
+INFO:model:Generating masks for /Users/pierrebastiani/Classification/images/Accipiter_gentilis_(Autour_des_palombes)/Accipiter_gentilis_Rectrices.jpg
+INFO:model:Generated 17 masks
+INFO:model:Filtered to 8 feather-shaped masks (IoU >= 0.93, aspect ratio 0.15-0.6)
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2025 00:45:07] "POST /predict HTTP/1.1" 200 -

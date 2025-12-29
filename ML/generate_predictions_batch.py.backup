@@ -1,0 +1,308 @@
+#!/usr/bin/env python3
+"""
+Generate predictions for all tasks in Label Studio using the ML backend.
+This script processes tasks in batches and saves progress, so it can be resumed if interrupted.
+"""
+
+import requests
+import json
+import time
+from pathlib import Path
+
+# Configuration
+LABEL_STUDIO_URL = "http://localhost:8080"
+ML_BACKEND_URL = "http://localhost:9090"
+PROJECT_ID = 6  # Your project ID
+
+# Refresh token from Label Studio Account page (long-lived)
+REFRESH_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6ODA2OTY3NTM5NSwiaWF0IjoxNzYyNDc1Mzk1LCJqdGkiOiJmMjQ2MzBjZjVmYzU0NDQwYmIyM2QzNTk5ZTM3Njk1OSIsInVzZXJfaWQiOiIxIn0.hJU3JFGnMokP_hfd9_bffQBInPrn5lrOw7_93x1y3Mw"
+
+# Token management
+_access_token = None
+_token_expires_at = 0
+
+def get_fresh_token():
+    """Get a fresh access token from the refresh token"""
+    global _access_token, _token_expires_at
+    
+    # If we have a valid token, return it
+    current_time = time.time()
+    if _access_token and current_time < _token_expires_at:
+        return _access_token
+    
+    # Get new access token
+    try:
+        response = requests.post(
+            f"{LABEL_STUDIO_URL}/api/token/refresh/",
+            json={"refresh": REFRESH_TOKEN},
+            headers={"Content-Type": "application/json"},
+            timeout=10
+        )
+        
+        if response.status_code == 200:
+            data = response.json()
+            _access_token = data.get("access")
+            # Tokens typically expire after 5 minutes, refresh after 4 minutes
+            _token_expires_at = current_time + 240
+            print("� Refreshed API token")
+            return _access_token
+        else:
+            print(f"⚠️  Failed to refresh token: {response.status_code}")
+            return None
+    except Exception as e:
+        print(f"⚠️  Token refresh error: {e}")
+        return None
+
+def get_headers():
+    """Get request headers with fresh token"""
+    token = get_fresh_token()
+    if not token:
+        raise Exception("Failed to get valid API token")
+    return {
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json"
+    }
+
+# File to track progress
+PROGRESS_FILE = Path("prediction_progress.json")
+
+def load_progress():
+    """Load progress from file"""
+    if PROGRESS_FILE.exists():
+        with open(PROGRESS_FILE, 'r') as f:
+            return json.load(f)
+    return {"completed_tasks": [], "failed_tasks": [], "last_task_id": None}
+
+def save_progress(progress):
+    """Save progress to file"""
+    with open(PROGRESS_FILE, 'w') as f:
+        json.dump(progress, f, indent=2)
+
+def get_all_tasks():
+    """Fetch all tasks from Label Studio (with pagination)"""
+    print("📋 Fetching all tasks from Label Studio...")
+    
+    all_tasks = []
+    page = 1
+    page_size = 100
+    
+    while True:
+        response = requests.get(
+            f"{LABEL_STUDIO_URL}/api/projects/{PROJECT_ID}/tasks",
+            headers=get_headers(),
+            params={"page": page, "page_size": page_size}
+        )
+        
+        if response.status_code != 200:
+            print(f"❌ Failed to fetch tasks (page {page}): {response.status_code}")
+            print(response.text)
+            return all_tasks if all_tasks else []
+        
+        data = response.json()
+        
+        # Handle both paginated and non-paginated responses
+        if isinstance(data, dict) and 'results' in data:
+            # Paginated response (new API)
+            tasks = data['results']
+            
+            if not tasks:  # No more tasks on this page
+                break
+                
+            all_tasks.extend(tasks)
+            print(f"  📄 Fetched page {page}: {len(tasks)} tasks (total: {len(all_tasks)})")
+            
+            # Check if there are more pages
+            if not data.get('next'):
+                break
+            page += 1
+            
+        elif isinstance(data, list):
+            # Non-paginated response (old API) - still need to paginate manually
+            if not data:  # Empty page
+                break
+                
+            all_tasks.extend(data)
+            print(f"  📄 Fetched page {page}: {len(data)} tasks (total: {len(all_tasks)})")
+            
+            # If we got fewer results than page_size, we're done
+            if len(data) < page_size:
+                break
+                
+            page += 1
+        else:
+            print(f"⚠️  Unexpected response format on page {page}")
+            break
+    
+    print(f"✅ Found {len(all_tasks)} tasks total")
+    return all_tasks
+
+def generate_prediction_for_task(task_id):
+    """Generate prediction for a single task"""
+    # First, get the task data
+    response = requests.get(
+        f"{LABEL_STUDIO_URL}/api/tasks/{task_id}",
+        headers=get_headers()
+    )
+    
+    if response.status_code != 200:
+        print(f"  ❌ Failed to fetch task {task_id}: {response.status_code}")
+        return False
+    
+    task = response.json()
+    
+    # Call ML backend to generate prediction
+    ml_response = requests.post(
+        f"{ML_BACKEND_URL}/predict",
+        json={"tasks": [task]},
+        timeout=300  # 5 minute timeout per image
+    )
+    
+    if ml_response.status_code != 200:
+        print(f"  ❌ ML backend failed for task {task_id}: {ml_response.status_code}")
+        return False
+    
+    predictions = ml_response.json()
+    if not predictions.get('results'):
+        print(f"  ⚠️  No predictions returned for task {task_id}")
+        return True  # Not a failure, just no detections
+    
+    prediction_data = predictions['results'][0]
+    
+    # Create prediction in Label Studio
+    create_response = requests.post(
+        f"{LABEL_STUDIO_URL}/api/predictions",
+        headers=get_headers(),
+        json={
+            "task": task_id,
+            "result": prediction_data.get('result', []),
+            "score": prediction_data.get('score', 0.0),
+            "model_version": "SAM with metadata"
+        }
+    )
+    
+    if create_response.status_code not in [200, 201]:
+        print(f"  ❌ Failed to save prediction for task {task_id}: {create_response.status_code}")
+        return False
+    
+    return True
+
+def main():
+    """Main execution"""
+    print("🚀 Label Studio Batch Prediction Generator")
+    print("=" * 60)
+    print(f"Label Studio: {LABEL_STUDIO_URL}")
+    print(f"ML Backend: {ML_BACKEND_URL}")
+    print(f"Project ID: {PROJECT_ID}")
+    print("=" * 60)
+    print()
+    
+    # Check ML backend health
+    try:
+        health = requests.get(f"{ML_BACKEND_URL}/health", timeout=5)
+        if health.status_code != 200:
+            print("❌ ML Backend is not responding!")
+            return
+        print("✅ ML Backend is healthy")
+    except Exception as e:
+        print(f"❌ Cannot connect to ML Backend: {e}")
+        return
+    
+    # Load progress
+    progress = load_progress()
+    completed = set(progress['completed_tasks'])
+    failed = set(progress['failed_tasks'])
+    
+    if completed:
+        print(f"📌 Resuming from previous run: {len(completed)} completed, {len(failed)} failed")
+    
+    # Get all tasks
+    tasks = get_all_tasks()
+    if not tasks:
+        return
+    
+    # Filter out already completed tasks
+    remaining_tasks = [t for t in tasks if t['id'] not in completed and t['id'] not in failed]
+    
+    print(f"\n📊 Task Summary:")
+    print(f"  Total tasks: {len(tasks)}")
+    print(f"  Completed: {len(completed)}")
+    print(f"  Failed: {len(failed)}")
+    print(f"  Remaining: {len(remaining_tasks)}")
+    print()
+    
+    if not remaining_tasks:
+        print("✅ All tasks already processed!")
+        return
+    
+    # Estimate time
+    # Assume ~30 seconds per image with SAM on CPU
+    estimated_seconds = len(remaining_tasks) * 30
+    estimated_hours = estimated_seconds / 3600
+    print(f"⏱️  Estimated time: {estimated_hours:.1f} hours ({estimated_seconds/60:.0f} minutes)")
+    print()
+    
+    print()
+    
+    # Process tasks
+    start_time = time.time()
+    
+    for i, task in enumerate(remaining_tasks, 1):
+        task_id = task['id']
+        image_name = Path(task['data'].get('image', 'unknown')).name
+        
+        print(f"[{i}/{len(remaining_tasks)}] Processing task {task_id}: {image_name}")
+        
+        try:
+            success = generate_prediction_for_task(task_id)
+            
+            if success:
+                print(f"  ✅ Success!")
+                completed.add(task_id)
+                progress['completed_tasks'] = list(completed)
+            else:
+                print(f"  ❌ Failed!")
+                failed.add(task_id)
+                progress['failed_tasks'] = list(failed)
+            
+            progress['last_task_id'] = task_id
+            save_progress(progress)
+            
+            # Calculate ETA
+            elapsed = time.time() - start_time
+            avg_time = elapsed / i
+            remaining = len(remaining_tasks) - i
+            eta_seconds = remaining * avg_time
+            eta_minutes = eta_seconds / 60
+            
+            print(f"  ⏱️  Avg: {avg_time:.1f}s/task, ETA: {eta_minutes:.0f} minutes")
+            print()
+            
+        except KeyboardInterrupt:
+            print("\n⚠️  Interrupted by user!")
+            print(f"Progress saved. Resume by running this script again.")
+            return
+        except Exception as e:
+            print(f"  ❌ Error: {e}")
+            failed.add(task_id)
+            progress['failed_tasks'] = list(failed)
+            progress['last_task_id'] = task_id
+            save_progress(progress)
+            print()
+    
+    # Final summary
+    elapsed_total = time.time() - start_time
+    print("=" * 60)
+    print("🎉 Batch Processing Complete!")
+    print(f"✅ Completed: {len(completed)} tasks")
+    print(f"❌ Failed: {len(failed)} tasks")
+    print(f"⏱️  Total time: {elapsed_total/60:.1f} minutes ({elapsed_total/3600:.2f} hours)")
+    print("=" * 60)
+    
+    if failed:
+        print(f"\n⚠️  {len(failed)} tasks failed:")
+        for task_id in failed:
+            print(f"  - Task {task_id}")
+        print("\nYou can manually review these tasks in Label Studio.")
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,4804 @@
+[
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Accipiter_gentilis_(Autour_des_palombes)/Accipiter_gentilis_Primaires.jpg",
+      "metadata": "📋 Espèce: Accipiter gentilis (Autour des palombes)\n🪶 Catégories: P1, P2-P9\n📏 Tailles: [10 -20 cm[, [20 - 35 cm[\n🎨 Couleurs: Blanc, Gris, Marron\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Blanc",
+        "Gris",
+        "Marron"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Gris",
+            "Marron"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Accipiter gentilis (Autour des palombes)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1",
+        "P2-P9"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Gris",
+        "Marron"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Accipiter_gentilis_(Autour_des_palombes)/Accipiter_gentilis_Secondaires.jpg",
+      "metadata": "📋 Espèce: Accipiter gentilis (Autour des palombes)\n🪶 Catégories: S1-S11\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Blanc, Gris, Marron\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Blanc",
+        "Gris",
+        "Marron"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Gris",
+            "Marron"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Accipiter gentilis (Autour des palombes)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S11"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Gris",
+        "Marron"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Accipiter_gentilis_(Autour_des_palombes)/Accipiter_gentilis_Rectrices.jpg",
+      "metadata": "📋 Espèce: Accipiter gentilis (Autour des palombes)\n🪶 Catégories: R1-R6\n📏 Tailles: [20 - 35 cm[\n🎨 Couleurs: Blanc, Gris, Marron\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Blanc",
+        "Gris",
+        "Marron"
+      ],
+      "default_taille": "[20 - 35 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Gris",
+            "Marron"
+          ],
+          "default_taille": "[20 - 35 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Accipiter gentilis (Autour des palombes)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R6"
+      ],
+      "tailles": [
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Gris",
+        "Marron"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Accipiter_nisus_(Epervier_d_Europe)/Accipiter_nisus_Primaires.jpg",
+      "metadata": "📋 Espèce: Accipiter nisus (Epervier d'Europe)\n🪶 Catégories: P1-P10\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Blanc, Gris, Marron\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Blanc",
+        "Gris",
+        "Marron"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Gris",
+            "Marron"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Accipiter nisus (Epervier d'Europe)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1-P10"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Gris",
+        "Marron"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Accipiter_nisus_(Epervier_d_Europe)/Accipiter_nisus_Secondaires.jpg",
+      "metadata": "📋 Espèce: Accipiter nisus (Epervier d'Europe)\n🪶 Catégories: S1-S11\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Blanc, Gris, Marron\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Blanc",
+        "Gris",
+        "Marron"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Gris",
+            "Marron"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Accipiter nisus (Epervier d'Europe)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S11"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Gris",
+        "Marron"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Accipiter_nisus_(Epervier_d_Europe)/Accipiter_nisus_Rectrices.jpg",
+      "metadata": "📋 Espèce: Accipiter nisus (Epervier d'Europe)\n🪶 Catégories: R1-R6\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Blanc, Gris, Marron\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Blanc",
+        "Gris",
+        "Marron"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Gris",
+            "Marron"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Accipiter nisus (Epervier d'Europe)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R6"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Gris",
+        "Marron"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Alcedo_atthis_(Martin-pêcheur_d_Europe)/Alcedo_atthis_primaires.jpg",
+      "metadata": "📋 Espèce: Alcedo atthis (Martin pêcheur d'Europe)\n🪶 Catégories: P1-P10\n📏 Tailles: <10 cm\n🎨 Couleurs: Bleu, Gris\n✨ Motifs: Liseré",
+      "default_colors": [
+        "Gris",
+        "Bleu"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Liseré"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Bleu"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Liseré"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Alcedo atthis (Martin pêcheur d'Europe)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1-P10"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Gris",
+        "Bleu"
+      ],
+      "motifs": [
+        "Liseré"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Alcedo_atthis_(Martin-pêcheur_d_Europe)/Alcedo_atthis_secondaires.jpg",
+      "metadata": "📋 Espèce: Alcedo atthis (Martin pêcheur d'Europe)\n🪶 Catégories: S1-S12\n📏 Tailles: <10 cm\n🎨 Couleurs: Bleu, Gris, Marron\n✨ Motifs: Liseré",
+      "default_colors": [
+        "Gris",
+        "Marron",
+        "Bleu"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Liseré"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Marron",
+            "Bleu"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Liseré"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Alcedo atthis (Martin pêcheur d'Europe)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S12"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Gris",
+        "Marron",
+        "Bleu"
+      ],
+      "motifs": [
+        "Liseré"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Alcedo_atthis_(Martin-pêcheur_d_Europe)/Alcedo_atthis_rectrices.jpg",
+      "metadata": "📋 Espèce: Alcedo atthis (Martin pêcheur d'Europe)\n🪶 Catégories: R1-R6\n📏 Tailles: <10 cm\n🎨 Couleurs: Bleu, Noir\n✨ Motifs: Dégradé",
+      "default_colors": [
+        "Bleu",
+        "Noir"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Dégradé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Bleu",
+            "Noir"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Dégradé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Alcedo atthis (Martin pêcheur d'Europe)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R6"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Bleu",
+        "Noir"
+      ],
+      "motifs": [
+        "Dégradé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Apus_apus_(Martinet_noir)/Apus_apus_primaires.jpg",
+      "metadata": "📋 Espèce: Apus apus (Martinet noir)\n🪶 Catégories: P1-P5, P6-P10\n📏 Tailles: <10 cm, [10 -20 cm[\n🎨 Couleurs: Marron\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Marron"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Apus apus (Martinet noir)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P6-P10",
+        "P1-P5"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Marron"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Apus_apus_(Martinet_noir)/Apus_apus_secondaires.jpg",
+      "metadata": "📋 Espèce: Apus apus (Martinet noir)\n🪶 Catégories: S1-S7\n📏 Tailles: <10 cm\n🎨 Couleurs: Marron\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Marron"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Apus apus (Martinet noir)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S7"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Marron"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Apus_apus_(Martinet_noir)/Apus_apus_rectrices.jpg",
+      "metadata": "📋 Espèce: Apus apus (Martinet noir)\n🪶 Catégories: R1-R6\n📏 Tailles: <10 cm\n🎨 Couleurs: Marron\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Marron"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Apus apus (Martinet noir)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R6"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Marron"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Ardea_cinerea_(Héron_cendré)/Ardea_cinerea_primaires.jpg",
+      "metadata": "📋 Espèce: Ardea cinerea (Héron cendré)\n🪶 Catégories: P1-P10\n📏 Tailles: [20 - 35 cm[\n🎨 Couleurs: Gris, Noir\n✨ Motifs: Dégradé",
+      "default_colors": [
+        "Gris",
+        "Noir"
+      ],
+      "default_taille": "[20 - 35 cm[",
+      "default_motif": "Dégradé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Noir"
+          ],
+          "default_taille": "[20 - 35 cm[",
+          "default_motif": "Dégradé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Ardea cinerea (Héron cendré)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1-P10"
+      ],
+      "tailles": [
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Gris",
+        "Noir"
+      ],
+      "motifs": [
+        "Dégradé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Ardea_cinerea_(Héron_cendré)/Ardea_cinerea_secondaires_2.jpg",
+      "metadata": "📋 Espèce: Ardea cinerea (Héron cendré)\n🪶 Catégories: S1-S16\n📏 Tailles: [20 - 35 cm[\n🎨 Couleurs: Gris, Noir\n✨ Motifs: Dégradé",
+      "default_colors": [
+        "Gris",
+        "Noir"
+      ],
+      "default_taille": "[20 - 35 cm[",
+      "default_motif": "Dégradé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Noir"
+          ],
+          "default_taille": "[20 - 35 cm[",
+          "default_motif": "Dégradé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Ardea cinerea (Héron cendré)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S16"
+      ],
+      "tailles": [
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Gris",
+        "Noir"
+      ],
+      "motifs": [
+        "Dégradé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Ardea_cinerea_(Héron_cendré)/Ardea_cinerea_rectrices.jpg",
+      "metadata": "📋 Espèce: Ardea cinerea (Héron cendré)\n🪶 Catégories: R1-R6\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Gris, Noir\n✨ Motifs: Dégradé",
+      "default_colors": [
+        "Gris",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Dégradé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Dégradé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Ardea cinerea (Héron cendré)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R6"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Gris",
+        "Noir"
+      ],
+      "motifs": [
+        "Dégradé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Athene_noctua_(Chevêche_d_Athéna)/Athene_noctua_primaires.jpg",
+      "metadata": "📋 Espèce: Athene noctua (Chevêche d'Athéna)\n🪶 Catégories: P1-P10\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Blanc, Marron\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Blanc",
+        "Marron"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Athene noctua (Chevêche d'Athéna)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1-P10"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Athene_noctua_(Chevêche_d_Athéna)/Athene_noctua_secondaires.jpg",
+      "metadata": "📋 Espèce: Athene noctua (Chevêche d'Athéna)\n🪶 Catégories: S1-S3, S4-S13\n📏 Tailles: <10 cm, [10 -20 cm[\n🎨 Couleurs: Blanc, Marron\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Blanc",
+        "Marron"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Athene noctua (Chevêche d'Athéna)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S4-S13",
+        "S1-S3"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Athene_noctua_(Chevêche_d_Athéna)/Athene_noctua_rectrices.jpg",
+      "metadata": "📋 Espèce: Athene noctua (Chevêche d'Athéna)\n🪶 Catégories: R1-R6\n📏 Tailles: <10 cm\n🎨 Couleurs: Blanc, Marron\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Blanc",
+        "Marron"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Athene noctua (Chevêche d'Athéna)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R6"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Bubo_bubo_(Hibou_Grand-Duc)/Bubo_bubo_Primaires.jpg",
+      "metadata": "📋 Espèce: Bubo bubo (Hibou Grand-Duc)\n🪶 Catégories: P1-P10\n📏 Tailles: [20 - 35 cm[\n🎨 Couleurs: Marron\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Marron"
+      ],
+      "default_taille": "[20 - 35 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron"
+          ],
+          "default_taille": "[20 - 35 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Bubo bubo (Hibou Grand-Duc)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1-P10"
+      ],
+      "tailles": [
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Marron"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Bubo_bubo_(Hibou_Grand-Duc)/Bubo_bubo_Secondaires.jpg",
+      "metadata": "📋 Espèce: Bubo bubo (Hibou Grand-Duc)\n🪶 Catégories: S1-S15\n📏 Tailles: [20 - 35 cm[\n🎨 Couleurs: Marron\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Marron"
+      ],
+      "default_taille": "[20 - 35 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron"
+          ],
+          "default_taille": "[20 - 35 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Bubo bubo (Hibou Grand-Duc)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S15"
+      ],
+      "tailles": [
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Marron"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Bubo_bubo_(Hibou_Grand-Duc)/Bubo_bubo_Rectrices.jpg",
+      "metadata": "📋 Espèce: Bubo bubo (Hibou Grand-Duc)\n🪶 Catégories: R1-R6\n📏 Tailles: [20 - 35 cm[\n🎨 Couleurs: Marron\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Marron"
+      ],
+      "default_taille": "[20 - 35 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron"
+          ],
+          "default_taille": "[20 - 35 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Bubo bubo (Hibou Grand-Duc)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R6"
+      ],
+      "tailles": [
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Marron"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Buteo_buteo_(Buse_variable)/Buteo_buteo_Primaires.jpg",
+      "metadata": "📋 Espèce: Buteo buteo (Buse variable)\n🪶 Catégories: P1, P2-P10\n📏 Tailles: [20 - 35 cm[\n🎨 Couleurs: Blanc, Marron, Noir\n✨ Motifs: Rayé, Tâché",
+      "default_colors": [
+        "Blanc",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[20 - 35 cm[",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[20 - 35 cm[",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Buteo buteo (Buse variable)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1",
+        "P2-P10"
+      ],
+      "tailles": [
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Tâché",
+        "Rayé"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Buteo_buteo_(Buse_variable)/Buteo_buteo_Secondaires.jpg",
+      "metadata": "📋 Espèce: Buteo buteo (Buse variable)\n🪶 Catégories: S1-S4, S5-S12\n📏 Tailles: [10 -20 cm[, [20 - 35 cm[\n🎨 Couleurs: Blanc, Marron\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Blanc",
+        "Marron"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Buteo buteo (Buse variable)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S5-S12",
+        "S1-S4"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Buteo_buteo_(Buse_variable)/Buteo_buteo_Rectrices.jpg",
+      "metadata": "📋 Espèce: Buteo buteo (Buse variable)\n🪶 Catégories: R1-R6\n📏 Tailles: [20 - 35 cm[\n🎨 Couleurs: Blanc, Marron\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Blanc",
+        "Marron"
+      ],
+      "default_taille": "[20 - 35 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron"
+          ],
+          "default_taille": "[20 - 35 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Buteo buteo (Buse variable)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R6"
+      ],
+      "tailles": [
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Ciconia_ciconia_(Cigogne_blanche)/Ciconia_ciconia_primaires.jpg",
+      "metadata": "📋 Espèce: Ciconia ciconia (Cigogne blanche)\n🪶 Catégories: P1 + P7-P8, P2-P6, P9-P12\n📏 Tailles: [20 - 35 cm[, [35-60 cm[\n🎨 Couleurs: Blanc, Noir\n✨ Motifs: Aucun, Tâché",
+      "default_colors": [
+        "Blanc",
+        "Noir"
+      ],
+      "default_taille": "[35-60 cm[",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Noir"
+          ],
+          "default_taille": "[35-60 cm[",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Ciconia ciconia (Cigogne blanche)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P2-P6",
+        "P1 + P7-P8",
+        "P9-P12"
+      ],
+      "tailles": [
+        "[35-60 cm[",
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Noir"
+      ],
+      "motifs": [
+        "Tâché",
+        "Aucun"
+      ],
+      "num_rows": 3
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Ciconia_ciconia_(Cigogne_blanche)/Ciconia_ciconia_secondaires1.jpg",
+      "metadata": "📋 Espèce: Ciconia ciconia (Cigogne blanche)\n🪶 Catégories: S1-S19\n📏 Tailles: [20 - 35 cm[\n🎨 Couleurs: Blanc, Noir\n✨ Motifs: Tâché",
+      "default_colors": [
+        "Blanc",
+        "Noir"
+      ],
+      "default_taille": "[20 - 35 cm[",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Noir"
+          ],
+          "default_taille": "[20 - 35 cm[",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Ciconia ciconia (Cigogne blanche)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S19"
+      ],
+      "tailles": [
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Noir"
+      ],
+      "motifs": [
+        "Tâché"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Ciconia_ciconia_(Cigogne_blanche)/Ciconia_ciconia_rectrices.jpg",
+      "metadata": "📋 Espèce: Ciconia ciconia (Cigogne blanche)\n🪶 Catégories: R1-R6\n📏 Tailles: [20 - 35 cm[\n🎨 Couleurs: Blanc\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Blanc"
+      ],
+      "default_taille": "[20 - 35 cm[",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc"
+          ],
+          "default_taille": "[20 - 35 cm[",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Ciconia ciconia (Cigogne blanche)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R6"
+      ],
+      "tailles": [
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Blanc"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Ciconia_nigra_(Cigogne_noire)/Ciconia_nigra_primaires.jpg",
+      "metadata": "📋 Espèce: Ciconia nigra (Cicogne noire)\n🪶 Catégories: P1+P7-P11, P2-P6\n📏 Tailles: [20 - 35 cm[, [35-60 cm[\n🎨 Couleurs: Marron, Noir\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[35-60 cm[",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[35-60 cm[",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Ciconia nigra (Cicogne noire)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1+P7-P11",
+        "P2-P6"
+      ],
+      "tailles": [
+        "[35-60 cm[",
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Ciconia_nigra_(Cigogne_noire)/Ciconia_nigra_secondairesbis.jpg",
+      "metadata": "📋 Espèce: Ciconia nigra (Cicogne noire)\n🪶 Catégories: S1-S18\n📏 Tailles: [20 - 35 cm[\n🎨 Couleurs: Marron, Noir\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[20 - 35 cm[",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[20 - 35 cm[",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Ciconia nigra (Cicogne noire)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S18"
+      ],
+      "tailles": [
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Ciconia_nigra_(Cigogne_noire)/Ciconia_nigra_rectrices.jpg",
+      "metadata": "📋 Espèce: Ciconia nigra (Cicogne noire)\n🪶 Catégories: R1-R6\n📏 Tailles: [20 - 35 cm[\n🎨 Couleurs: Marron, Noir\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[20 - 35 cm[",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[20 - 35 cm[",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Ciconia nigra (Cicogne noire)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R6"
+      ],
+      "tailles": [
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Circaetus_galicus_(Circaète_Jean-le-Blanc)/Circaetus_gallicus_primaires.jpg",
+      "metadata": "📋 Espèce: Circaetus galicus (Circaète Jean-le-blanc)\n🪶 Catégories: P1, P2-P6, P7-10\n📏 Tailles: [20 - 35 cm[, [35-60 cm[\n🎨 Couleurs: Blanc, Marron, Noir\n✨ Motifs: Rayé, Tâché",
+      "default_colors": [
+        "Blanc",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[35-60 cm[",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[35-60 cm[",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Circaetus galicus (Circaète Jean-le-blanc)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1",
+        "P2-P6",
+        "P7-10"
+      ],
+      "tailles": [
+        "[35-60 cm[",
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Tâché",
+        "Rayé"
+      ],
+      "num_rows": 3
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Circaetus_galicus_(Circaète_Jean-le-Blanc)/Circaetus_gallicus_secondaires.jpg",
+      "metadata": "📋 Espèce: Circaetus galicus (Circaète Jean-le-blanc)\n🪶 Catégories: S1-S5, S6-S12\n📏 Tailles: [20 - 35 cm[\n🎨 Couleurs: Blanc, Marron\n✨ Motifs: Rayé, Tâché",
+      "default_colors": [
+        "Blanc",
+        "Marron"
+      ],
+      "default_taille": "[20 - 35 cm[",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron"
+          ],
+          "default_taille": "[20 - 35 cm[",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Circaetus galicus (Circaète Jean-le-blanc)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S5",
+        "S6-S12"
+      ],
+      "tailles": [
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron"
+      ],
+      "motifs": [
+        "Tâché",
+        "Rayé"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Circaetus_galicus_(Circaète_Jean-le-Blanc)/Circaetus_gallicus_rectrices.jpg",
+      "metadata": "📋 Espèce: Circaetus galicus (Circaète Jean-le-blanc)\n🪶 Catégories: R1, R2-R6\n📏 Tailles: [20 - 35 cm[\n🎨 Couleurs: Blanc, Marron\n✨ Motifs: Rayé, Tâché",
+      "default_colors": [
+        "Blanc",
+        "Marron"
+      ],
+      "default_taille": "[20 - 35 cm[",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron"
+          ],
+          "default_taille": "[20 - 35 cm[",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Circaetus galicus (Circaète Jean-le-blanc)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R2-R6",
+        "R1"
+      ],
+      "tailles": [
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron"
+      ],
+      "motifs": [
+        "Tâché",
+        "Rayé"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Columba_livia_(Pigeon_biset)/Columba_livia_secondaires.jpg",
+      "metadata": "📋 Espèce: Columba livia (Pigeon biset)\n🪶 Catégories: S1-S6, S7-S10\n📏 Tailles: <10 cm, [10 -20 cm[\n🎨 Couleurs: Gris, Noir\n✨ Motifs: Tâché",
+      "default_colors": [
+        "Gris",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Columba livia (Pigeon biset)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S6",
+        "S7-S10"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Gris",
+        "Noir"
+      ],
+      "motifs": [
+        "Tâché"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Columba_livia_(Pigeon_biset)/Columba_livia_Rectrices.jpg",
+      "metadata": "📋 Espèce: Columba livia (Pigeon biset)\n🪶 Catégories: R1-R4\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Gris, Noir\n✨ Motifs: Dégradé",
+      "default_colors": [
+        "Gris",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Dégradé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Dégradé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Columba livia (Pigeon biset)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R4"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Gris",
+        "Noir"
+      ],
+      "motifs": [
+        "Dégradé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Columba_palombus_(Pigeon_Ramier)/Columba_palombus_primaires_fondnoir.jpg",
+      "metadata": "📋 Espèce: Columba palombus (Pigeon ramier)\n🪶 Catégories: P1+P9, P2-P8\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Blanc, Gris\n✨ Motifs: Aucun, Liseré",
+      "default_colors": [
+        "Blanc",
+        "Gris"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Liseré"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Gris"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Liseré"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Columba palombus (Pigeon ramier)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P2-P8",
+        "P1+P9"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Gris"
+      ],
+      "motifs": [
+        "Liseré",
+        "Aucun"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Columba_palombus_(Pigeon_Ramier)/Columba_palombus_secondaires.jpg",
+      "metadata": "📋 Espèce: Columba palombus (Pigeon ramier)\n🪶 Catégories: S1-S11, S12\n📏 Tailles: <10 cm, [10 -20 cm[\n🎨 Couleurs: Gris\n✨ Motifs: Aucun, Dégradé",
+      "default_colors": [
+        "Gris"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Dégradé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Dégradé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Columba palombus (Pigeon ramier)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S12",
+        "S1-S11"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Gris"
+      ],
+      "motifs": [
+        "Dégradé",
+        "Aucun"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Columba_palombus_(Pigeon_Ramier)/Columba_palombus_rectrices.jpg",
+      "metadata": "📋 Espèce: Columba palombus (Pigeon ramier)\n🪶 Catégories: R1-R5\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Gris, Noir\n✨ Motifs: Dégradé",
+      "default_colors": [
+        "Gris",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Dégradé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Dégradé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Columba palombus (Pigeon ramier)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R5"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Gris",
+        "Noir"
+      ],
+      "motifs": [
+        "Dégradé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Coracias_garrulus_(Rollier_d_Europe)/Coracias_garrulus_primaires.jpg",
+      "metadata": "📋 Espèce: Coracias garrulus (Rollier d'Europe)\n🪶 Catégories: P1-P2, P3-P10\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Blanc, Bleu, Gris, Noir\n✨ Motifs: Irisé, Tâché",
+      "default_colors": [
+        "Blanc",
+        "Gris",
+        "Bleu",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Gris",
+            "Bleu",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Coracias garrulus (Rollier d'Europe)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1-P2",
+        "P3-P10"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Gris",
+        "Bleu",
+        "Noir"
+      ],
+      "motifs": [
+        "Tâché",
+        "Irisé"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Coracias_garrulus_(Rollier_d_Europe)/Coracias_garrulus_secondaires.jpg",
+      "metadata": "📋 Espèce: Coracias garrulus (Rollier d'Europe)\n🪶 Catégories: S1-S3, S10-S12, S4-S8, S9\n📏 Tailles: <10 cm, [10 -20 cm[\n🎨 Couleurs: Blanc, Bleu, Gris, Marron, Noir\n✨ Motifs: Dégradé, Tâché",
+      "default_colors": [
+        "Blanc",
+        "Gris",
+        "Bleu",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Gris",
+            "Bleu",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Coracias garrulus (Rollier d'Europe)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S10-S12",
+        "S1-S3",
+        "S9",
+        "S4-S8"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Blanc",
+        "Gris",
+        "Bleu",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Tâché",
+        "Dégradé"
+      ],
+      "num_rows": 4
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Coracias_garrulus_(Rollier_d_Europe)/Coracias_garrulus_rectrices.jpg",
+      "metadata": "📋 Espèce: Coracias garrulus (Rollier d'Europe)\n🪶 Catégories: R1-R2, R3-R6\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Bleu, Gris, Noir\n✨ Motifs: Irisé, Tâché",
+      "default_colors": [
+        "Gris",
+        "Bleu",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Bleu",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Coracias garrulus (Rollier d'Europe)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R3-R6",
+        "R1-R2"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Gris",
+        "Bleu",
+        "Noir"
+      ],
+      "motifs": [
+        "Tâché",
+        "Irisé"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Corvus_corone_(Corneille_noire)/Corvus_corone_Primaires.jpg",
+      "metadata": "📋 Espèce: Corvus corone (Corneille noire)\n🪶 Catégories: P1;P10, P2-P9\n📏 Tailles: [10 -20 cm[, [20 - 35 cm[\n🎨 Couleurs: Noir\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Corvus corone (Corneille noire)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1;P10",
+        "P2-P9"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Noir"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Corvus_corone_(Corneille_noire)/Corvus_corone_Secondaires.jpg",
+      "metadata": "📋 Espèce: Corvus corone (Corneille noire)\n🪶 Catégories: S1-S9, S10\n📏 Tailles: <10 cm, [10 -20 cm[\n🎨 Couleurs: Noir\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Corvus corone (Corneille noire)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S9",
+        "S10"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Noir"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Corvus_corone_(Corneille_noire)/Corvus_corone_Rectrices.jpg",
+      "metadata": "📋 Espèce: Corvus corone (Corneille noire)\n🪶 Catégories: R1-R6\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Noir\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Corvus corone (Corneille noire)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R6"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Noir"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Delichon_urbicum_(Hirondelle_des_fenêtres)/Delichon_urbicum_primaires.jpg",
+      "metadata": "📋 Espèce: Delichon urbicum (Hirondelle des fenêtres)\n🪶 Catégories: P1-P9\n📏 Tailles: <10 cm\n🎨 Couleurs: Gris, Marron\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Gris",
+        "Marron"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Marron"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Delichon urbicum (Hirondelle des fenêtres)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1-P9"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Gris",
+        "Marron"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Delichon_urbicum_(Hirondelle_des_fenêtres)/Delichon_urbicum_secondaires.jpg",
+      "metadata": "📋 Espèce: Delichon urbicum (Hirondelle des fenêtres)\n🪶 Catégories: S1-S6, S7-S9\n📏 Tailles: <10 cm\n🎨 Couleurs: Blanc, Gris, Marron\n✨ Motifs: Aucun, Liseré",
+      "default_colors": [
+        "Blanc",
+        "Gris",
+        "Marron"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Liseré"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Gris",
+            "Marron"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Liseré"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Delichon urbicum (Hirondelle des fenêtres)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S6",
+        "S7-S9"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Blanc",
+        "Gris",
+        "Marron"
+      ],
+      "motifs": [
+        "Liseré",
+        "Aucun"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Delichon_urbicum_(Hirondelle_des_fenêtres)/Delichon_urbicum_rectrices_fondnoir.jpg",
+      "metadata": "📋 Espèce: Delichon urbicum (Hirondelle des fenêtres)\n🪶 Catégories: R1-R6\n📏 Tailles: <10 cm\n🎨 Couleurs: Gris, Marron\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Gris",
+        "Marron"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Marron"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Delichon urbicum (Hirondelle des fenêtres)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R6"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Gris",
+        "Marron"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Falco_tinnunculus_(Faucon_crécerelle)/Falco_tinnunculus_Primaires.jpg",
+      "metadata": "📋 Espèce: Falco tinnunculus (Faucon crécerelle)\n🪶 Catégories: P1+P4-P10, P2-P3\n📏 Tailles: [10 -20 cm[, [20 - 35 cm[\n🎨 Couleurs: Blanc, Marron, Noir\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Blanc",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Falco tinnunculus (Faucon crécerelle)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1+P4-P10",
+        "P2-P3"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Falco_tinnunculus_(Faucon_crécerelle)/Falco_tinnunculus_Secondaires.jpg",
+      "metadata": "📋 Espèce: Falco tinnunculus (Faucon crécerelle)\n🪶 Catégories: S1-S11\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Blanc, Marron, Noir\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Blanc",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Falco tinnunculus (Faucon crécerelle)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S11"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Falco_tinnunculus_(Faucon_crécerelle)/Falco_tinnunculus_Femelle_rectrices.jpg",
+      "metadata": "📋 Espèce: Falco tinnunculus (Faucon crécerelle)\n⚥ Sexe: ♂\n🪶 Catégories: R1-R6, R1-R7\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Gris, Marron, Noir\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Falco tinnunculus (Faucon crécerelle)",
+      "age": "",
+      "sexe": "♂",
+      "categories": [
+        "R1-R6",
+        "R1-R7"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Gallinula_chloropus_(Poule_d_eau)/Gallinula_chloropus_Primaires.jpg",
+      "metadata": "📋 Espèce: Gallinula chloropus (Gallinule poule d'eau)\n🪶 Catégories: P1-P10\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Gris, Marron\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Gris",
+        "Marron"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Marron"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Gallinula chloropus (Gallinule poule d'eau)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1-P10"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Gris",
+        "Marron"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Gallinula_chloropus_(Poule_d_eau)/Gallinula_chloropus_Secondaires.jpg",
+      "metadata": "📋 Espèce: Gallinula chloropus (Gallinule poule d'eau)\n🪶 Catégories: S1-S12\n📏 Tailles: <10 cm\n🎨 Couleurs: Gris, Marron\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Gris",
+        "Marron"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Marron"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Gallinula chloropus (Gallinule poule d'eau)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S12"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Gris",
+        "Marron"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Gallinula_chloropus_(Poule_d_eau)/Gallinula_chloropus_rectrices.jpg",
+      "metadata": "📋 Espèce: Gallinula chloropus (Gallinule poule d'eau)\n🪶 Catégories: R1-R6\n📏 Tailles: <10 cm\n🎨 Couleurs: Gris, Marron\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Gris",
+        "Marron"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Marron"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Gallinula chloropus (Gallinule poule d'eau)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R6"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Gris",
+        "Marron"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Gallus_gallus_domesticus_(Poule_domestique)/Gallus_gallus_primaires.jpg",
+      "metadata": "📋 Espèce: Gallus gallus domesticus (Poule domestique)\n⚥ Sexe: ♀\n🪶 Catégories: P1-P10\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Marron\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Marron"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Gallus gallus domesticus (Poule domestique)",
+      "age": "",
+      "sexe": "♀",
+      "categories": [
+        "P1-P10"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Marron"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Gallus_gallus_domesticus_(Poule_domestique)/Gallus_gallus_secondaires.jpg",
+      "metadata": "📋 Espèce: Gallus gallus domesticus (Poule domestique)\n⚥ Sexe: ♀\n🪶 Catégories: S1-S11\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Marron\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Marron"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Gallus gallus domesticus (Poule domestique)",
+      "age": "",
+      "sexe": "♀",
+      "categories": [
+        "S1-S11"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Marron"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Gallus_gallus_domesticus_(Poule_domestique)/Gallus_gallus_rectrices.jpg",
+      "metadata": "📋 Espèce: Gallus gallus domesticus (Poule domestique)\n⚥ Sexe: ♀\n🪶 Catégories: R1-R6\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Marron, Noir\n✨ Motifs: Dégradé",
+      "default_colors": [
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Dégradé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Dégradé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Gallus gallus domesticus (Poule domestique)",
+      "age": "",
+      "sexe": "♀",
+      "categories": [
+        "R1-R6"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Dégradé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Gyps_fulvus_(Vautour_fauve)/Gyps_fulvus_Primaires.jpg",
+      "metadata": "📋 Espèce: Gyps fulvus (Vautour fauve)\n🪶 Catégories: P1-P2, P3-P10\n📏 Tailles: [35-60 cm[\n🎨 Couleurs: Blanc, Gris, Marron, Noir\n✨ Motifs: Aucun, Tâché",
+      "default_colors": [
+        "Blanc",
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[35-60 cm[",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Gris",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[35-60 cm[",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Gyps fulvus (Vautour fauve)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1-P2",
+        "P3-P10"
+      ],
+      "tailles": [
+        "[35-60 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Tâché",
+        "Aucun"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Gyps_fulvus_(Vautour_fauve)/Gyps_fulvus_Secondaires_1.jpg",
+      "metadata": "📋 Espèce: Gyps fulvus (Vautour fauve)\n🪶 Catégories: S1-S22\n📏 Tailles: [35-60 cm[\n🎨 Couleurs: Blanc, Gris, Marron, Noir\n✨ Motifs: Tâché",
+      "default_colors": [
+        "Blanc",
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[35-60 cm[",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Gris",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[35-60 cm[",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Gyps fulvus (Vautour fauve)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S22"
+      ],
+      "tailles": [
+        "[35-60 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Tâché"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Gyps_fulvus_(Vautour_fauve)/Gyps_fulvus_Rectrices_1.jpg",
+      "metadata": "📋 Espèce: Gyps fulvus (Vautour fauve)\n🪶 Catégories: R1-R7\n📏 Tailles: [20 - 35 cm[\n🎨 Couleurs: Blanc, Gris, Marron, Noir\n✨ Motifs: Tâché",
+      "default_colors": [
+        "Blanc",
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[20 - 35 cm[",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Gris",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[20 - 35 cm[",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Gyps fulvus (Vautour fauve)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R7"
+      ],
+      "tailles": [
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Tâché"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Lanius_senator_(Pie-grièche_à_tête_rousse)/Lanius_senator_Primaires.jpg",
+      "metadata": "📋 Espèce: Lanius senator (Pie grièche à tête rousse)\n🪶 Catégories: P1-P10\n📏 Tailles: <10 cm\n🎨 Couleurs: Blanc, Gris, Marron, Noir\n✨ Motifs: Tâché",
+      "default_colors": [
+        "Blanc",
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Gris",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Lanius senator (Pie grièche à tête rousse)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1-P10"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Blanc",
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Tâché"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Lanius_senator_(Pie-grièche_à_tête_rousse)/Lanius_senator_Secondaires.jpg",
+      "metadata": "📋 Espèce: Lanius senator (Pie grièche à tête rousse)\n🪶 Catégories: S1, S2-S9\n📏 Tailles: <10 cm\n🎨 Couleurs: Blanc, Gris, Marron\n✨ Motifs: Dégradé, Tâché",
+      "default_colors": [
+        "Blanc",
+        "Gris",
+        "Marron"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Gris",
+            "Marron"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Lanius senator (Pie grièche à tête rousse)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1",
+        "S2-S9"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Blanc",
+        "Gris",
+        "Marron"
+      ],
+      "motifs": [
+        "Tâché",
+        "Dégradé"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Lanius_senator_(Pie-grièche_à_tête_rousse)/Lanius_senator_Rectrices_FN.jpg",
+      "metadata": "📋 Espèce: Lanius senator (Pie grièche à tête rousse)\n🪶 Catégories: R1, R2-R6\n📏 Tailles: <10 cm\n🎨 Couleurs: Blanc, Marron, Noir\n✨ Motifs: Aucun, Tâché",
+      "default_colors": [
+        "Blanc",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Lanius senator (Pie grièche à tête rousse)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R2-R6",
+        "R1"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Tâché",
+        "Aucun"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Lullula_arborea_(Alouette_lulu)/Lullula_arborea_Primaires.jpg",
+      "metadata": "📋 Espèce: Lullula arborea (Alouette lulu)\n🪶 Catégories: P1-P9\n📏 Tailles: <10 cm\n🎨 Couleurs: Gris, Marron\n✨ Motifs: Dégradé",
+      "default_colors": [
+        "Gris",
+        "Marron"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Dégradé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Marron"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Dégradé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Lullula arborea (Alouette lulu)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1-P9"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Gris",
+        "Marron"
+      ],
+      "motifs": [
+        "Dégradé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Lullula_arborea_(Alouette_lulu)/Lullula_arborea_Secondaires.jpg",
+      "metadata": "📋 Espèce: Lullula arborea (Alouette lulu)\n🪶 Catégories: S1-S6, S7-S9\n📏 Tailles: <10 cm\n🎨 Couleurs: Gris, Marron\n✨ Motifs: Aucun, Tâché",
+      "default_colors": [
+        "Gris",
+        "Marron"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Marron"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Lullula arborea (Alouette lulu)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S6",
+        "S7-S9"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Gris",
+        "Marron"
+      ],
+      "motifs": [
+        "Tâché",
+        "Aucun"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Lullula_arborea_(Alouette_lulu)/Lullula_arborea_rectrices.jpg",
+      "metadata": "📋 Espèce: Lullula arborea (Alouette lulu)\n🪶 Catégories: R1-R2, R3-R5, R6\n📏 Tailles: <10 cm\n🎨 Couleurs: Blanc, Gris, Marron, Noir\n✨ Motifs: Dégradé, Tâché",
+      "default_colors": [
+        "Blanc",
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Gris",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Lullula arborea (Alouette lulu)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R3-R5",
+        "R6",
+        "R1-R2"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Blanc",
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Tâché",
+        "Dégradé"
+      ],
+      "num_rows": 3
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Milvus_migrans_(Milan_noir)/Milvus_migrans_Primaires.jpg",
+      "metadata": "📋 Espèce: Milvus migrans (Milan noir)\n🕐 Age: Juvénile\n🪶 Catégories: P1-P6, P7-P10\n📏 Tailles: [20 - 35 cm[\n🎨 Couleurs: Marron, Noir\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[20 - 35 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[20 - 35 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Milvus migrans (Milan noir)",
+      "age": "Juvénile",
+      "sexe": "",
+      "categories": [
+        "P1-P6",
+        "P7-P10"
+      ],
+      "tailles": [
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Milvus_migrans_(Milan_noir)/Milvus_migrans_Secondaires.jpg",
+      "metadata": "📋 Espèce: Milvus migrans (Milan noir)\n🕐 Age: Juvénile\n🪶 Catégories: S1-S10, S11-S13\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Blanc, Marron, Noir\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Blanc",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Milvus migrans (Milan noir)",
+      "age": "Juvénile",
+      "sexe": "",
+      "categories": [
+        "S1-S10",
+        "S11-S13"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Milvus_migrans_(Milan_noir)/Milvus_migrans_Rectrices.jpg",
+      "metadata": "📋 Espèce: Milvus migrans (Milan noir)\n🕐 Age: Juvénile\n🪶 Catégories: R1-R6\n📏 Tailles: [20 - 35 cm[\n🎨 Couleurs: Marron, Noir\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[20 - 35 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[20 - 35 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Milvus migrans (Milan noir)",
+      "age": "Juvénile",
+      "sexe": "",
+      "categories": [
+        "R1-R6"
+      ],
+      "tailles": [
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Milvus_milvus_(Milan_royal)/Milvus_milvus_primaires.jpg",
+      "metadata": "📋 Espèce: Milvus milvus (Milan royal)\n🪶 Catégories: P1-P3, P4-P5, P6, P7-P10\n📏 Tailles: [20 - 35 cm[, [35-60 cm[\n🎨 Couleurs: Blanc, Marron, Noir\n✨ Motifs: Rayé, Tâché",
+      "default_colors": [
+        "Blanc",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[35-60 cm[",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[35-60 cm[",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Milvus milvus (Milan royal)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1-P3",
+        "P4-P5",
+        "P6",
+        "P7-P10"
+      ],
+      "tailles": [
+        "[35-60 cm[",
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Tâché",
+        "Rayé"
+      ],
+      "num_rows": 4
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Milvus_milvus_(Milan_royal)/Milvus_milvus_secondaires.jpg",
+      "metadata": "📋 Espèce: Milvus milvus (Milan royal)\n🪶 Catégories: S1-S9, S10\n📏 Tailles: [10 -20 cm[, [20 - 35 cm[\n🎨 Couleurs: Blanc, Marron, Noir\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Blanc",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Milvus milvus (Milan royal)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S9",
+        "S10"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Otus_scops_(Petit_duc_scops)/Otus_scops_Primaires.jpg",
+      "metadata": "📋 Espèce: Otus scops (Petit duc Scops)\n🪶 Catégories: P1-P8, P9-P11\n📏 Tailles: <10 cm, [10 -20 cm[\n🎨 Couleurs: Blanc, Marron\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Blanc",
+        "Marron"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Otus scops (Petit duc Scops)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P9-P11",
+        "P1-P8"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Otus_scops_(Petit_duc_scops)/Otus_scops_rectrices.jpg",
+      "metadata": "📋 Espèce: Otus scops (Petit duc Scops)\n🪶 Catégories: R1-R5\n📏 Tailles: <10 cm\n🎨 Couleurs: Blanc, Marron\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Blanc",
+        "Marron"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Otus scops (Petit duc Scops)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R5"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Phalacrocorax_carbo_(Grand_cormoran)/Phalacrocorax_carbo_primaires.jpg",
+      "metadata": "📋 Espèce: Phalacrocorax carbo (Grand cormoran)\n🪶 Catégories: P1-P6, P7-P10\n📏 Tailles: [10 -20 cm[, [20 - 35 cm[\n🎨 Couleurs: Marron, Noir\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Phalacrocorax carbo (Grand cormoran)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1-P6",
+        "P7-P10"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Phalacrocorax_carbo_(Grand_cormoran)/Phalacrocorax_carbo_secondaires.jpg",
+      "metadata": "📋 Espèce: Phalacrocorax carbo (Grand cormoran)\n🪶 Catégories: S1-S19\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Marron, Noir\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Phalacrocorax carbo (Grand cormoran)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S19"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Phalacrocorax_carbo_(Grand_cormoran)/Phalacrocorax_carbo_rectrices.jpg",
+      "metadata": "📋 Espèce: Phalacrocorax carbo (Grand cormoran)\n🪶 Catégories: R1-R8\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Noir\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Phalacrocorax carbo (Grand cormoran)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R8"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Noir"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Pica_pica_(Pie_bavarde)/Pica_pica_Primaires.jpg",
+      "metadata": "📋 Espèce: Pica pica (Pie bavarde)\n🪶 Catégories: P1, P2-P9\n📏 Tailles: <10 cm, [10 -20 cm[\n🎨 Couleurs: Blanc, Noir\n✨ Motifs: Tâché",
+      "default_colors": [
+        "Blanc",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Pica pica (Pie bavarde)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1",
+        "P2-P9"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Blanc",
+        "Noir"
+      ],
+      "motifs": [
+        "Tâché"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Pica_pica_(Pie_bavarde)/Pica_pica_Secondaires.jpg",
+      "metadata": "📋 Espèce: Pica pica (Pie bavarde)\n🪶 Catégories: S1-S7, S8\n📏 Tailles: <10 cm, [10 -20 cm[\n🎨 Couleurs: Bleu, Noir, Vert, Violet\n✨ Motifs: Irisé",
+      "default_colors": [
+        "Violet",
+        "Vert",
+        "Bleu",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Irisé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Violet",
+            "Vert",
+            "Bleu",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Irisé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Pica pica (Pie bavarde)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S7",
+        "S8"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Violet",
+        "Vert",
+        "Bleu",
+        "Noir"
+      ],
+      "motifs": [
+        "Irisé"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Pica_pica_(Pie_bavarde)/Pica_pica_Rectrices.jpg",
+      "metadata": "📋 Espèce: Pica pica (Pie bavarde)\n🪶 Catégories: R1-R2, R3-R6\n📏 Tailles: [10 -20 cm[, [20 - 35 cm[\n🎨 Couleurs: Bleu, Noir, Vert, Violet\n✨ Motifs: Irisé",
+      "default_colors": [
+        "Violet",
+        "Vert",
+        "Bleu",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Irisé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Violet",
+            "Vert",
+            "Bleu",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Irisé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Pica pica (Pie bavarde)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R3-R6",
+        "R1-R2"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Violet",
+        "Vert",
+        "Bleu",
+        "Noir"
+      ],
+      "motifs": [
+        "Irisé"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Scolopax_rusticola_(Bécasse_des_bois)/Scolopax_rusticola_Primaires.jpg",
+      "metadata": "📋 Espèce: Scolopax rusticola (Bécasse des bois)\n🪶 Catégories: P1-P10\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Marron\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Marron"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Scolopax rusticola (Bécasse des bois)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1-P10"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Marron"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Scolopax_rusticola_(Bécasse_des_bois)/Scolopax_rusticola_Secondaires.jpg",
+      "metadata": "📋 Espèce: Scolopax rusticola (Bécasse des bois)\n🪶 Catégories: S1-S13\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Marron\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Marron"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Scolopax rusticola (Bécasse des bois)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S13"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Marron"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Streptopelia_decaocto_(Tourterelle_turque)/Streptopelia_decaocto_primaires.jpg",
+      "metadata": "📋 Espèce: Streptopelia decaocto (Tourterelle turque)\n🪶 Catégories: P1-P8, P9-P10\n📏 Tailles: <10 cm, [10 -20 cm[\n🎨 Couleurs: Gris, Marron, Noir\n✨ Motifs: Dégradé",
+      "default_colors": [
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Dégradé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Dégradé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Streptopelia decaocto (Tourterelle turque)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P9-P10",
+        "P1-P8"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Dégradé"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Streptopelia_decaocto_(Tourterelle_turque)/Streptopelia_decaocto_Secondaires_(2).jpg",
+      "metadata": "📋 Espèce: Streptopelia decaocto (Tourterelle turque)\n🪶 Catégories: S1-S10\n📏 Tailles: <10 cm\n🎨 Couleurs: Gris, Marron\n✨ Motifs: Dégradé",
+      "default_colors": [
+        "Gris",
+        "Marron"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Dégradé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Marron"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Dégradé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Streptopelia decaocto (Tourterelle turque)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S10"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Gris",
+        "Marron"
+      ],
+      "motifs": [
+        "Dégradé"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Streptopelia_decaocto_(Tourterelle_turque)/Streptopelia_decaocto_rectrices.jpg",
+      "metadata": "📋 Espèce: Streptopelia decaocto (Tourterelle turque)\n🪶 Catégories: R1, R2-R3, R4-R6\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Blanc, Gris, Marron, Noir\n✨ Motifs: Aucun, Tâché",
+      "default_colors": [
+        "Blanc",
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Gris",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Streptopelia decaocto (Tourterelle turque)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R2-R3",
+        "R1",
+        "R4-R6"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Tâché",
+        "Aucun"
+      ],
+      "num_rows": 3
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Streptopelia_turtur_(Tourterelle_des_bois)/Streptopelia_turtur_Primaires.jpg",
+      "metadata": "📋 Espèce: Streptopelia turtur (Tourterelle des bois)\n🪶 Catégories: P1-P8, P9-P10\n📏 Tailles: <10 cm, [10 -20 cm[\n🎨 Couleurs: Marron, Noir\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Streptopelia turtur (Tourterelle des bois)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P9-P10",
+        "P1-P8"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Streptopelia_turtur_(Tourterelle_des_bois)/Streptopelia_turtur_Secondaires.jpg",
+      "metadata": "📋 Espèce: Streptopelia turtur (Tourterelle des bois)\n🪶 Catégories: S1-S7, S8-S10\n📏 Tailles: <10 cm\n🎨 Couleurs: Marron, Noir\n✨ Motifs: Aucun, Liseré",
+      "default_colors": [
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Liseré"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Liseré"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Streptopelia turtur (Tourterelle des bois)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S7",
+        "S8-S10"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Liseré",
+        "Aucun"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Streptopelia_turtur_(Tourterelle_des_bois)/Streptopelia_turtur_Rectrices.jpg",
+      "metadata": "📋 Espèce: Streptopelia turtur (Tourterelle des bois)\n🪶 Catégories: R1, R2-R6\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Blanc, Gris, Marron, Noir\n✨ Motifs: Aucun, Tâché",
+      "default_colors": [
+        "Blanc",
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Gris",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Streptopelia turtur (Tourterelle des bois)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R2-R6",
+        "R1"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Tâché",
+        "Aucun"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Strix_aluco_(Chouette_hulotte)/Strix_aluco_primaires.jpg",
+      "metadata": "📋 Espèce: Strix aluco (Chouette hulotte)\n🪶 Catégories: P1-P3 + P7-P10, P4-P6\n📏 Tailles: [10 -20 cm[, [20 - 35 cm[\n🎨 Couleurs: Blanc, Marron\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Blanc",
+        "Marron"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Strix aluco (Chouette hulotte)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P4-P6",
+        "P1-P3 + P7-P10"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "[20 - 35 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Strix_aluco_(Chouette_hulotte)/Strix_aluco_secondaires.jpg",
+      "metadata": "📋 Espèce: Strix aluco (Chouette hulotte)\n🪶 Catégories: S1-S12, S13\n📏 Tailles: <10 cm, [10 -20 cm[\n🎨 Couleurs: Blanc, Marron, Noir\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Blanc",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Strix aluco (Chouette hulotte)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S13",
+        "S1-S12"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Strix_aluco_(Chouette_hulotte)/Strix_aluco_Rectrices1.jpg",
+      "metadata": "📋 Espèce: Strix aluco (Chouette hulotte)\n🪶 Catégories: R1, R2-R6\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Blanc, Marron\n✨ Motifs: Piqueté, Rayé",
+      "default_colors": [
+        "Blanc",
+        "Marron"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Strix aluco (Chouette hulotte)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R2-R6",
+        "R1"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron"
+      ],
+      "motifs": [
+        "Rayé",
+        "Piqueté"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Sturnus_vulgaris_(Etourneau_sansonnet)/Sturnus_vulgaris_Primaires.jpg",
+      "metadata": "📋 Espèce: Sturnus vulgaris (Etourneau sansonnet)\n🪶 Catégories: P1-P3, P4-P9\n📏 Tailles: <10 cm, [10 -20 cm[\n🎨 Couleurs: Gris, Marron, Noir\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Sturnus vulgaris (Etourneau sansonnet)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1-P3",
+        "P4-P9"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Sturnus_vulgaris_(Etourneau_sansonnet)/Sturnus_vulgaris_Secondaires.jpg",
+      "metadata": "📋 Espèce: Sturnus vulgaris (Etourneau sansonnet)\n🪶 Catégories: S1-S6, S7-S9\n📏 Tailles: <10 cm\n🎨 Couleurs: Gris, Marron, Noir\n✨ Motifs: Aucun, Liseré",
+      "default_colors": [
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Liseré"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Liseré"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Sturnus vulgaris (Etourneau sansonnet)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S6",
+        "S7-S9"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Gris",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Liseré",
+        "Aucun"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Sturnus_vulgaris_(Etourneau_sansonnet)/Sturnus_vulgaris_rectrices.jpg",
+      "metadata": "📋 Espèce: Sturnus vulgaris (Etourneau sansonnet)\n🪶 Catégories: R1-R6\n📏 Tailles: <10 cm\n🎨 Couleurs: Gris, Marron\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Gris",
+        "Marron"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Marron"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Sturnus vulgaris (Etourneau sansonnet)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R6"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Gris",
+        "Marron"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Turdus_merula_(Merle_noir)/Turdus_merula_Primaires.jpg",
+      "metadata": "📋 Espèce: Turdus merula (Merle noir)\n🪶 Catégories: P1+P7-P9, P2-P6\n📏 Tailles: <10 cm, [10 -20 cm[\n🎨 Couleurs: Gris, Marron\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Gris",
+        "Marron"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Marron"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Turdus merula (Merle noir)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P2-P6",
+        "P1+P7-P9"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Gris",
+        "Marron"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Turdus_merula_(Merle_noir)/Turdus_merula_Secondaires.jpg",
+      "metadata": "📋 Espèce: Turdus merula (Merle noir)\n🪶 Catégories: S1-S9\n📏 Tailles: <10 cm\n🎨 Couleurs: Gris, Marron\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Gris",
+        "Marron"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Marron"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Turdus merula (Merle noir)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S9"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Gris",
+        "Marron"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Turdus_merula_(Merle_noir)/Turdus_merula_Rectrices.jpg",
+      "metadata": "📋 Espèce: Turdus merula (Merle noir)\n🪶 Catégories: R1-R6\n📏 Tailles: [10 -20 cm[\n🎨 Couleurs: Marron, Noir\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Turdus merula (Merle noir)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R6"
+      ],
+      "tailles": [
+        "[10 -20 cm["
+      ],
+      "couleurs": [
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Turdus_philomenos_(Grive_musicienne)/Turdus_philomenos_Primaires.jpg",
+      "metadata": "📋 Espèce: Turdus philomenos (Grive musicienne)\n🪶 Catégories: P1-P2, P3-P4, P5-P9\n📏 Tailles: <10 cm, [10 -20 cm[\n🎨 Couleurs: Gris, Jaune, Marron\n✨ Motifs: Aucun, Tâché",
+      "default_colors": [
+        "Gris",
+        "Marron",
+        "Jaune"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Marron",
+            "Jaune"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Turdus philomenos (Grive musicienne)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1-P2",
+        "P3-P4",
+        "P5-P9"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Gris",
+        "Marron",
+        "Jaune"
+      ],
+      "motifs": [
+        "Tâché",
+        "Aucun"
+      ],
+      "num_rows": 3
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Turdus_philomenos_(Grive_musicienne)/Turdus_philomenos_Secondaires.jpg",
+      "metadata": "📋 Espèce: Turdus philomenos (Grive musicienne)\n🪶 Catégories: S1-S4, S5-S9\n📏 Tailles: <10 cm\n🎨 Couleurs: Gris, Jaune, Marron\n✨ Motifs: Aucun, Tâché",
+      "default_colors": [
+        "Gris",
+        "Marron",
+        "Jaune"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Gris",
+            "Marron",
+            "Jaune"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Turdus philomenos (Grive musicienne)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S1-S4",
+        "S5-S9"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Gris",
+        "Marron",
+        "Jaune"
+      ],
+      "motifs": [
+        "Tâché",
+        "Aucun"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Turdus_philomenos_(Grive_musicienne)/Turdus_philomenos_Rectrices.jpg",
+      "metadata": "📋 Espèce: Turdus philomenos (Grive musicienne)\n🪶 Catégories: R1-R6\n📏 Tailles: <10 cm\n🎨 Couleurs: Marron\n✨ Motifs: Aucun",
+      "default_colors": [
+        "Marron"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Aucun"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Marron"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Aucun"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Turdus philomenos (Grive musicienne)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R6"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Marron"
+      ],
+      "motifs": [
+        "Aucun"
+      ],
+      "num_rows": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Tyto_alba_(Chouette_effraie)/Tyto_alba_rectrices.jpg",
+      "metadata": "📋 Espèce: Tyto alba (Chouette effraie)\n🪶 Catégories: R1, R2-R5, R6\n📏 Tailles: <10 cm\n🎨 Couleurs: Blanc, Marron\n✨ Motifs: Piqueté, Rayé",
+      "default_colors": [
+        "Blanc",
+        "Marron"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Piqueté"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Piqueté"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Tyto alba (Chouette effraie)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R6",
+        "R2-R5",
+        "R1"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron"
+      ],
+      "motifs": [
+        "Piqueté",
+        "Rayé"
+      ],
+      "num_rows": 3
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Upupa_epops_(Huppe_fasciée)/Upupa_epops_primairesFB.jpg",
+      "metadata": "📋 Espèce: Upupa epops (Huppe fasciée)\n🪶 Catégories: P1, P2-P9\n📏 Tailles: <10 cm, [10 -20 cm[\n🎨 Couleurs: Blanc, Noir\n✨ Motifs: Tâché",
+      "default_colors": [
+        "Blanc",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Upupa epops (Huppe fasciée)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "P1",
+        "P2-P9"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Blanc",
+        "Noir"
+      ],
+      "motifs": [
+        "Tâché"
+      ],
+      "num_rows": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Upupa_epops_(Huppe_fasciée)/Upupa_epops_secondairesFN.jpg",
+      "metadata": "📋 Espèce: Upupa epops (Huppe fasciée)\n🪶 Catégories: S1-S3, S4-S5, S6-S8\n📏 Tailles: <10 cm, [10 -20 cm[\n🎨 Couleurs: Blanc, Marron, Noir\n✨ Motifs: Rayé",
+      "default_colors": [
+        "Blanc",
+        "Marron",
+        "Noir"
+      ],
+      "default_taille": "[10 -20 cm[",
+      "default_motif": "Rayé"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Marron",
+            "Noir"
+          ],
+          "default_taille": "[10 -20 cm[",
+          "default_motif": "Rayé"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Upupa epops (Huppe fasciée)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "S4-S5",
+        "S1-S3",
+        "S6-S8"
+      ],
+      "tailles": [
+        "[10 -20 cm[",
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Blanc",
+        "Marron",
+        "Noir"
+      ],
+      "motifs": [
+        "Rayé"
+      ],
+      "num_rows": 3
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=images/Upupa_epops_(Huppe_fasciée)/Upupa_epops_rectricesFN.jpg",
+      "metadata": "📋 Espèce: Upupa epops (Huppe fasciée)\n🪶 Catégories: R1-R5\n📏 Tailles: <10 cm\n🎨 Couleurs: Blanc, Noir\n✨ Motifs: Tâché",
+      "default_colors": [
+        "Blanc",
+        "Noir"
+      ],
+      "default_taille": "<10 cm",
+      "default_motif": "Tâché"
+    },
+    "predictions": [
+      {
+        "result": [],
+        "model_version": "metadata-defaults",
+        "meta": {
+          "default_colors": [
+            "Blanc",
+            "Noir"
+          ],
+          "default_taille": "<10 cm",
+          "default_motif": "Tâché"
+        }
+      }
+    ],
+    "meta": {
+      "espece": "Upupa epops (Huppe fasciée)",
+      "age": "",
+      "sexe": "",
+      "categories": [
+        "R1-R5"
+      ],
+      "tailles": [
+        "<10 cm"
+      ],
+      "couleurs": [
+        "Blanc",
+        "Noir"
+      ],
+      "motifs": [
+        "Tâché"
+      ],
+      "num_rows": 1
+    }
+  }
+]
