@@ -1,7 +1,0 @@
-label-studio-ml>=1.0.9
-segment-anything
-torch
-torchvision
-opencv-python
-pillow
-numpy

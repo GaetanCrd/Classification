@@ -5,8 +5,8 @@
 *.h5
 *.pb
 
-# ML model directories
-ML/custom_ml_backend/models/
+# ML directory - contains large files and backend code
+ML/
 
 # Python
 __pycache__/
