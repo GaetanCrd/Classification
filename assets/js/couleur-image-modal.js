@@ -31,7 +31,7 @@
               <h3 id="couleur-modal-title" class="text-xl font-semibold mb-4 text-slate-900">Guide des nuances de couleurs</h3>
               <img 
                 id="couleur-modal-img"
-                src="nuance.jpg" 
+                src="assets/images/nuance.jpg" 
                 alt="Guide des nuances de couleurs" 
                 class="w-full h-auto rounded-lg"
               />

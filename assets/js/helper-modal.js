@@ -30,7 +30,7 @@
             <div class="p-4 overflow-auto max-h-[90vh]">
               <h3 class="text-lg font-semibold mb-3 text-slate-900">Guide des motifs</h3>
               <img 
-                src="exemple motif.jpg" 
+                src="assets/images/exemple motif.jpg" 
                 alt="Guide des motifs de plumes" 
                 class="w-full h-auto rounded-lg"
               />
